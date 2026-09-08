@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is Taking Cinnamon Every Day the Secret to Controlling Diabetes in Less Than 1 Month?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* identidade extraida do proprio produto: bronze do rotulo + creme do fundo */
+  --brand:#A86B2B;        /* dourado/bronze do rotulo */
+  --brand-deep:#5A3C1B;   /* marrom canela escuro */
+  --brand-soft:#C79A5E;   /* bronze claro */
+  --header:#1B2B4B;       /* azul do cabecalho */
+  --cream:#ECD9C2;        /* creme do fundo do produto */
+  --ink:#2A1F14;
+  --body:#2b2320;
+  --muted:#7d6f60;
+  --line:#e8dfd3;
+  --neutral:#EFE7DC;
+  --neutral-ink:#6B5A45;
+  --red:#B3402B;
+  --red-soft:#FBF1EC;
+  --star:#D9A036;
+  /* botoes seguem verde limao */
+  --lime:#22A447;        /* verde vivo do CTA */
+  --lime-hover:#1D8E3D;
+  --lime-border:#177630;
+  --bg:#ffffff;          /* a folha do artigo */
+  --page:#FFFFFF;        /* fundo da pagina */
+  --sheet-pad:38px;
+  --soft:#FAF3EA;
+  --ct:800px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--page);color:var(--body);
+  font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  font-size:20px;line-height:1.8;text-align:left;
+}
+img{max-width:100%;height:auto;display:block;border-radius:0}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--ct);margin:0 auto;padding:0 18px}
+.sheet{
+  max-width:calc(var(--ct) + var(--sheet-pad)*2);margin:26px auto 34px;
+  background:var(--bg);padding:0 var(--sheet-pad) 34px;
+}
+.sheet .wrap{padding:0 18px}
+@media(max-width:860px){
+  :root{--sheet-pad:16px}
+  .sheet{margin:0 auto;box-shadow:none}
+}
+
+/* ---------- HEADER ---------- */
+.topbar{background:#CD0103;padding:14px 0}
+.topbar .wrap{max-width:1200px;display:flex;align-items:center}
+.topbar .logo{height:32px;width:auto;max-width:100%;display:block}
+@media(max-width:640px){.topbar{padding:11px 0}.topbar .logo{height:22px}}
+.topbar h2{
+  margin:0;color:#fff;font-size:23px;font-weight:700;line-height:1.3;
+  letter-spacing:.02em;text-align:left;
+}
+@media(max-width:640px){.topbar h2{font-size:18px}}
+
+.crumbs{border-bottom:1px solid var(--line);padding:16px 0 14px}
+.crumbs .wrap{max-width:var(--ct)}
+.crumbs p{margin:0;font-size:15px;color:var(--muted);text-align:left}
+.crumbs strong{color:var(--brand);font-weight:600}
+
+/* ---------- ARTICLE ---------- */
+article{padding:34px 0 10px}
+h1{
+  margin:0 0 18px;font-size:40px;line-height:1.22;font-weight:800;color:var(--ink);
+  letter-spacing:-.015em;text-align:left;
+}
+.dek{
+  margin:0 0 26px;font-size:22px;line-height:1.5;font-weight:600;color:#4a3f36;text-align:left;
+}
+@media(max-width:640px){h1{font-size:29px}.dek{font-size:18px}body{font-size:18px}}
+
+.byline{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:14px 0;margin:26px 0 30px;font-size:15px;color:var(--muted);
+}
+.byline .author{color:var(--ink);font-weight:600}
+.byline .share{display:flex;gap:8px;margin-left:auto}
+.byline .share .sh{
+  width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;
+  text-decoration:none;transition:transform .15s ease,opacity .15s ease;
+}
+.byline .share .sh svg{width:26px;height:26px;display:block}
+.byline .share .sh:hover{transform:translateY(-1px);opacity:.85}
+@media(max-width:640px){.byline .share{margin-left:0;width:100%}}
+
+article p{margin:0 0 20px;text-align:left}
+article h2{
+  margin:44px 0 20px;font-size:31px;line-height:1.3;font-weight:800;color:var(--brand-deep);text-align:left;
+}
+article h3{
+  margin:34px 0 14px;font-size:24px;line-height:1.35;font-weight:700;color:var(--ink);text-align:left;
+}
+article h4{
+  margin:30px 0 12px;font-size:21px;line-height:1.4;font-weight:700;color:var(--brand-deep);text-align:left;
+}
+@media(max-width:640px){article h2{font-size:24px}article h3{font-size:20px}article h4{font-size:18px}}
+article strong{font-weight:700;color:var(--ink)}
+article em{font-style:italic}
+hr.rule{border:0;border-top:1px solid var(--line);margin:38px 0}
+
+/* ---------- FIGURES (sem borda arredondada, alinhadas à esquerda) ---------- */
+figure{margin:26px 0 30px;text-align:left}
+figure img{
+  width:100%;border-radius:0;background:var(--cream);
+  min-height:60px;
+}
+figcaption{margin-top:8px;font-size:14px;color:var(--muted);text-align:left}
+
+/* zoom lento para fotos */
+figure.kb-zoom{overflow:hidden;background:var(--cream)}
+figure.kb-zoom img{
+  animation:kbz 11s ease-in-out infinite alternate;
+  transform-origin:50% 45%;will-change:transform;
+}
+@keyframes kbz{from{transform:scale(1)}to{transform:scale(1.10)}}
+@media(prefers-reduced-motion:reduce){figure.kb-zoom img{animation:none}}
+
+/* pulsacao (mesma amplitude e tempo dos GIFs: 3,5% em 1,44s) */
+figure.pulse{overflow:hidden;background:var(--cream)}
+figure.pulse img{animation:pls 1.44s ease-in-out infinite;will-change:transform}
+@keyframes pls{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+@media(prefers-reduced-motion:reduce){figure.pulse img{animation:none}}
+
+/* video em loop (comporta-se como GIF: sem som, sem controles) */
+figure.video video{
+  display:block;width:100%;max-width:100%;height:auto;border-radius:0;background:var(--cream);
+}
+
+/* dois GIFs lado a lado */
+.quiz-open{cursor:pointer}
+figure.duo{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:26px 0 30px}
+figure.duo img{width:100%;height:auto;border-radius:0;background:var(--cream)}
+
+/* ---------- BOTÃO VERDE LIMÃO ---------- */
+.cta{
+  display:block;width:100%;text-align:center;text-decoration:none;
+  background:var(--lime);color:#fff;
+  font-weight:800;font-size:20px;line-height:1.3;letter-spacing:.02em;
+  padding:20px 24px;border-radius:10px;border:2px solid var(--lime-border);
+  cursor:pointer;text-shadow:0 1px 1px rgba(0,0,0,.28);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 3px 0 var(--lime-border), 0 8px 16px rgba(40,60,20,.22);
+  transition:background .18s ease, transform .06s ease, box-shadow .18s ease;
+  margin:30px 0;text-transform:uppercase;
+}
+.cta:hover{background:var(--lime-hover)}
+.cta:active{transform:translateY(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 0 var(--lime-border), 0 4px 10px rgba(40,60,20,.2)}
+.cta.cta-attached{margin-top:16px}
+.cta-note{margin:-16px 0 34px;font-size:15px;color:var(--muted);text-align:left}
+@media(max-width:640px){.cta{font-size:17px;padding:18px 16px}}
+
+/* faixa de secao com fundo colorido, sangrando ate as bordas da folha */
+.band{
+  background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  margin:40px calc(-1 * var(--sheet-pad));padding:36px var(--sheet-pad) 32px;
+}
+.band > :first-child{margin-top:0}
+.band > :last-child{margin-bottom:0}
+
+/* ---------- CALLOUTS ---------- */
+.pull{
+  border-left:5px solid var(--brand);background:var(--soft);
+  padding:18px 20px;margin:28px 0;font-size:20px;font-weight:600;color:var(--ink);text-align:left;
+}
+.warn{
+  border-left:5px solid #B3402B;background:#FBF1EC;
+  padding:18px 20px;margin:28px 0;text-align:left;
+}
+.warn p:last-child{margin-bottom:0}
+/* marca-texto amarelo: quebra linha a linha, sem virar caixa */
+.hl{
+  background:#F8DD51;color:var(--ink);
+  padding:.10em .16em;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+/* linha de destaque: um degrau acima do corpo (20px), abaixo do h4 (24px) */
+.hl-lead{
+  margin:30px 0;font-size:26px;line-height:1.5;font-weight:700;
+  color:var(--ink);text-align:left;
+}
+@media(max-width:640px){.hl-lead{font-size:21px}}
+
+/* ---------- DEPOIMENTOS (estilo metabolae) ---------- */
+.reviews{
+  background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  width:100vw;margin-left:calc(50% - 50vw);padding:48px 0 40px;text-align:center;
+}
+.reviews .inner{max-width:1320px;margin:0 auto;padding:0 18px}
+.reviews .top-stars{color:var(--star);letter-spacing:6px;font-size:15px;margin:0 0 10px;text-align:center;text-indent:6px}
+.reviews h2{
+  margin:0 0 8px;font-size:36px;line-height:1.2;font-weight:700;color:var(--ink);text-align:center;
+}
+.reviews h2 em{font-style:normal;color:var(--brand)}
+.reviews .sub{margin:0 0 26px;font-size:15px;color:var(--muted);text-align:center}
+@media(max-width:640px){.reviews h2{font-size:26px}}
+
+/* faixa de fotos rolando */
+.marquee{overflow:hidden;width:100vw;margin:0 0 34px calc(50% - 50vw);-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.marquee-row{display:flex;gap:10px;width:max-content;animation:slide 60s linear infinite}
+.marquee:hover .marquee-row{animation-play-state:paused}
+.marquee img{
+  width:150px;height:112px;object-fit:cover;border-radius:10px;background:var(--cream);flex:0 0 auto;
+}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-row{animation:none}}
+@media(max-width:640px){.marquee img{width:118px;height:88px}}
+
+/* cards */
+.track{
+  display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  padding:4px;-ms-overflow-style:none;scrollbar-width:none;
+}
+.track::-webkit-scrollbar{display:none}
+.rev{
+  flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start;
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:24px;text-align:left;display:flex;flex-direction:column;
+}
+@media(max-width:1000px){.rev{flex:0 0 calc((100% - 24px)/2)}}
+@media(max-width:680px){
+  /* card centralizado na tela, com o vizinho espiando dos dois lados */
+  .track{padding-left:calc(9vw - 18px);padding-right:calc(9vw - 18px);gap:14px}
+  .rev{flex:0 0 82vw;scroll-snap-align:center}
+}
+.rev .score{display:flex;align-items:center;gap:8px;margin:0 0 12px}
+.rev .score b{font-size:15px;font-weight:600;color:var(--ink)}
+.rev .score .stars{color:var(--star);letter-spacing:1px;font-size:14px}
+.rev h4{margin:0 0 10px;font-size:17px;font-weight:700;color:var(--ink);line-height:1.4}
+.rev p{margin:0 0 20px;font-size:15px;line-height:1.72;color:#5a4d43}
+.rev .foot{margin-top:auto;border-top:1px solid var(--line);padding-top:14px}
+.rev .who{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.rev .who img{width:26px;height:26px;border-radius:50%;object-fit:cover;background:var(--cream);flex:0 0 26px}
+.rev .who .nm{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rev .who .vf{margin-left:auto;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--brand);white-space:nowrap}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.tag{
+  font-size:12px;font-weight:500;color:var(--brand);
+  border:1px solid var(--brand-soft);border-radius:999px;padding:6px 14px;background:#fff;
+}
+
+/* navegacao */
+.dots{display:flex;justify-content:center;gap:7px;margin:26px 0 12px}
+.dots span{width:8px;height:8px;border-radius:999px;background:#DCD1C2;cursor:pointer;transition:all .2s}
+.dots span.on{width:22px;background:var(--brand)}
+.carousel-nav{display:flex;justify-content:center;gap:12px}
+.carousel-nav button{
+  width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;
+  color:var(--brand-deep);font-size:16px;line-height:1;cursor:pointer;transition:all .2s;
+}
+.carousel-nav button:hover{background:var(--brand);border-color:var(--brand);color:#fff}
+.disclaimer-mini{font-size:12px;color:var(--muted);margin:18px 0 0;text-align:center}
+
+/* ---------- TIMELINE (imagem esquerda / timeline direita) ---------- */
+.timeline-wrap{display:grid;grid-template-columns:0.85fr 1.15fr;gap:34px;align-items:start;margin:26px 0 10px}
+@media(max-width:820px){.timeline-wrap{grid-template-columns:1fr;gap:22px}}
+.timeline-media{position:sticky;top:20px}
+.timeline-media img{width:100%;border-radius:0;background:var(--soft)}
+.timeline{position:relative;padding-left:30px;margin:0}
+.timeline:before{
+  content:"";position:absolute;left:9px;top:8px;bottom:8px;width:3px;
+  background:linear-gradient(180deg,var(--brand),var(--cream));
+}
+.tl-item{position:relative;margin-bottom:26px;text-align:left}
+.tl-item:before{
+  content:"";position:absolute;left:-27px;top:9px;width:15px;height:15px;
+  background:var(--brand);border:3px solid #fff;box-shadow:0 0 0 2px var(--brand);border-radius:50%;
+}
+.tl-item .when{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:800;letter-spacing:.12em;
+  background:var(--brand);color:#fff;padding:6px 12px;margin-bottom:8px;border-radius:4px;
+}
+.tl-item .when .cal{width:17px;height:17px;flex:0 0 17px;display:block}
+.tl-item ul{margin:0;padding-left:18px}
+.tl-item li{margin:0 0 4px;font-size:18px;line-height:1.6}
+.tl-item .kicker{margin:8px 0 0;font-weight:700;color:#111;font-size:18px}
+
+/* ===== SO NO MOBILE: grafico fixo + linha do tempo que desce com o scroll ===== */
+@media(max-width:820px){
+  /* o grafico para de acompanhar a rolagem (era o que causava a sobreposicao) */
+  .timeline-media{position:static}
+
+  /* trilho apagado; a linha colorida cresce conforme --p */
+  .timeline.tl-scroll:before{background:#E7DAC7}
+  .timeline.tl-scroll:after{
+    content:"";position:absolute;left:9px;top:8px;width:3px;border-radius:2px;
+    height:var(--p,0px);background:var(--brand);
+  }
+  /* marcador e selo acendem quando a linha chega neles */
+  .timeline.tl-scroll .tl-item:before{
+    background:#E7DAC7;box-shadow:0 0 0 2px #E7DAC7;
+    transition:background .3s ease,box-shadow .3s ease,transform .3s ease;
+  }
+  .timeline.tl-scroll .tl-item.on:before{
+    background:var(--brand);box-shadow:0 0 0 2px var(--brand);transform:scale(1.12);
+  }
+  .timeline.tl-scroll .tl-item .when{
+    background:#E7DAC7;color:#7d6a52;transition:background .3s ease,color .3s ease;
+  }
+  .timeline.tl-scroll .tl-item.on .when{background:var(--brand);color:#fff}
+}
+
+/* ---------- PRA QUEM É / NÃO É ---------- */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:26px 0 10px}
+@media(max-width:820px){.fit-grid{grid-template-columns:1fr}}
+.fit-col{border:1px solid var(--line);background:#fff;text-align:left}
+.fit-yes{border-color:#CDE3B4}
+.fit-yes li b{color:#3F6B1C}
+.fit-no{border-color:#E8C9BF}
+.fit-no li b{color:var(--red)}
+.fit-col .hd{padding:14px 18px;font-weight:800;font-size:19px;letter-spacing:.01em}
+.fit-yes .hd{background:var(--lime);color:#fff}
+.fit-no .hd{background:var(--red);color:#fff}
+.fit-col ul{list-style:none;margin:0;padding:6px 18px 18px}
+.fit-col li{position:relative;padding:14px 0 14px 34px;border-bottom:1px solid var(--line);font-size:17px;line-height:1.6}
+.fit-col li:last-child{border-bottom:0}
+.fit-col li b{display:block;font-size:17px;color:#111;margin-bottom:2px}
+.fit-col li:before{
+  position:absolute;left:0;top:14px;width:22px;height:22px;display:inline-flex;
+  align-items:center;justify-content:center;font-size:13px;font-weight:800;border-radius:50%;
+}
+.fit-yes li:before{content:"✓";background:var(--lime);color:#fff}
+.fit-no li:before{content:"✕";background:var(--red);color:#fff}
+
+/* ---------- CUSTOS ---------- */
+.cost-list{list-style:none;margin:24px 0;padding:0}
+.cost-list li{
+  border-left:4px solid var(--brand);background:var(--soft);
+  padding:14px 18px;margin-bottom:12px;font-size:18px;line-height:1.65;text-align:left;
+}
+
+/* ---------- DOIS CAMINHOS ---------- */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:26px 0}
+@media(max-width:820px){.paths{grid-template-columns:1fr}}
+.path{border:1px solid var(--line);text-align:left}
+.path img{width:100%;border-radius:0;background:var(--soft)}
+.path .hd{padding:14px 18px;font-weight:800;font-size:19px}
+.path-1 .hd{background:var(--neutral);color:var(--neutral-ink)}
+.path-2 .hd{background:var(--brand);color:#fff}
+.path .body{padding:6px 18px 18px}
+.path p{font-size:17px;line-height:1.7;margin:0 0 14px}
+
+/* ---------- GARANTIA ---------- */
+.guarantee{border:2px solid var(--brand);background:var(--soft);padding:24px;margin:30px 0;text-align:left}
+.guarantee::after{content:"";display:block;clear:both}
+.guarantee h3{margin-top:0}
+/* selo de garantia: contorna o texto no desktop, centraliza no mobile */
+.guarantee .seal{float:right;width:172px;height:auto;margin:2px 0 12px 22px;background:none}
+@media(max-width:640px){.guarantee .seal{float:none;display:block;width:150px;margin:0 auto 18px}}
+
+/* ---------- COMENTÁRIOS ---------- */
+.comments{border-top:1px solid var(--line);margin-top:44px;padding-top:26px}
+.comments h3{margin-top:0}
+.cmt{display:flex;gap:12px;margin-bottom:20px;text-align:left}
+.cmt.reply{margin-left:52px}
+.avatar{
+  flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:var(--brand-deep);
+  color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;
+}
+.cmt .c-body{flex:1}
+.cmt .c-name{font-weight:700;font-size:16px;color:var(--brand-deep);margin:0}
+.cmt .c-text{margin:2px 0 4px;font-size:16px;line-height:1.6}
+.cmt .c-meta{font-size:13px;color:var(--muted)}
+.cmt .c-meta b{color:var(--brand);font-weight:600;cursor:pointer}
+
+/* ---------- RODAPÉ ---------- */
+footer{background:transparent;margin-top:0;padding:6px 0 44px}
+footer p{font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 12px;text-align:left}
+footer .links{font-size:13px;color:var(--muted)}
+footer .links a{margin-right:14px;text-decoration:underline}
+</style>
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<div class="topbar">
+  <div class="wrap"><img class="logo" src="assets/losangeles-post.webp" alt="Los Angeles Post"></div>
+</div>
+
+<div class="sheet">
+<div class="crumbs">
+  <div class="wrap"><p>Home &gt; Health &gt; <strong>Diabetes</strong></p></div>
+</div>
+
+<article>
+<div class="wrap">
+
+  <h1>Is Taking Cinnamon Every Day the Secret to Controlling Diabetes in Less Than 1 Month?</h1>
+
+  <p class="dek">A Harvard Medical School report reveals the centuries-old secret of the country with the lowest diabetes rate in the world. And how it will send the numbers on your glucose meter plummeting in just a few weeks.</p>
+
+  <figure>
+    <img src="assets/01-ceylon-cinnamon-sticks-next-to-a-glucose-meter-r.gif" width="760" height="428" alt="Ceylon cinnamon sticks next to a glucose meter reading 95 mg/dL">
+  </figure>
+
+  <div class="byline">
+    <span class="author">By Wade Brennan</span>
+    <span>&nbsp;|&nbsp; Sun. Jul. 5th, 2026</span>
+    <span class="share"><a class="sh" href="#" aria-label="Share on Facebook"><svg viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a class="sh" href="#" aria-label="Share on X"><svg viewBox="0 0 24 24" fill="#000000" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a><a class="sh" href="#" aria-label="Share on Pinterest"><svg viewBox="0 0 24 24" fill="#E60023" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.719-.359-1.781c0-1.669.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.53.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0Z"/></svg></a><a class="sh" href="#" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a><a class="sh" href="#" aria-label="Share on E-mail"><svg viewBox="0 0 24 24" fill="#EA4335" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a></span>
+  </div>
+
+  <p>Take a look at this:</p>
+
+  <figure class="duo">
+    <img src="assets/02-farmers-peeling-the-inner-bark-from-a-ceylon-cin.gif" width="374" height="420" loading="lazy" decoding="async"
+         alt="Farmers peeling the inner bark from a Ceylon cinnamon trunk in Sri Lanka">
+    <img src="assets/03-ceylon-cinnamon-quills-resting-on-freshly-ground.gif" width="374" height="420" loading="lazy" decoding="async"
+         alt="Ceylon cinnamon quills resting on freshly ground cinnamon">
+  </figure>
+
+  <p>This is the inner bark of <strong><em>Cinnamomum verum</em></strong>.</p>
+  <p>The scientific name literally means <strong>“true cinnamon.”</strong></p>
+  <p>We’re not talking about the same cinnamon that’s sitting in the little jar in your cabinet.</p>
+  <p>It’s not even the same species.</p>
+  <p><em>Cinnamomum verum</em> grows in a narrow strip of land in southwestern <strong>Sri Lanka</strong> — and practically nowhere else on the planet.</p>
+  <p>For part of history, between the 16th and 18th centuries, it was so valuable that European powers fought bloody conflicts to monopolize its trade.</p>
+
+  <figure><img src="assets/04-naval-battle-between-european-powers-over-the-ci.webp" width="1200" height="673" loading="lazy" decoding="async" alt="Naval battle between European powers over the cinnamon trade"></figure>
+
+  <p>And for centuries, it was used in healing rituals by native peoples and regarded as a super remedy in natural medicine.</p>
+  <p>But to many Western scientists, all this talk about cinnamon controlling blood sugar was nonsense...</p>
+  <p>Until a chemist from the United States Department of Agriculture published a report that changed everything.</p>
+  <p>Let me explain.</p>
+
+  <hr class="rule">
+
+  <h2>It All Started With an Apple Pie…</h2>
+
+  <figure><img src="assets/05-apple-pie-with-cinnamon-sticks.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Apple pie with cinnamon sticks"></figure>
+
+  <p>Dr. Richard Anderson was a lead researcher at the United States Department of Agriculture, at the Beltsville research center in Maryland.</p>
+  <p>His job was to test various common foods and measure what each one did to blood sugar.</p>
+  <p>One of them was apple pie.</p>
+  <p>Now think about this with me…</p>
+  <p>Apple pie is sugar, white flour, and fat.</p>
+  <p>Anderson expected it to worsen glucose markers, obviously.</p>
+  <p>But when the results came back…</p>
+  <p>It was the opposite.</p>
+  <p class="pull">The apple pie improved insulin function more than any other food in the entire series of tests.</p>
+  <p>So he was confused and repeated the test.</p>
+  <p>Same result.</p>
+  <p>And this is where it gets interesting.</p>
+
+  <h2>When Anderson Analyzed the Pie Ingredient by Ingredient, He Finally Found the Secret…</h2>
+
+  <figure><img src="assets/06-dr-richard-anderson-in-his-lab-analyzing-the-ing.webp" width="1000" height="802" loading="lazy" decoding="async" alt="Dr. Richard Anderson in his lab, analyzing the ingredients in the apple pie"></figure>
+
+  <p>So he began separating the ingredients one by one.</p>
+  <p>Flour. Sugar. Butter. Apple.</p>
+  <p>The first obvious hypothesis was the apple.</p>
+  <p>It would make sense.</p>
+  <p>So they tested the apple by itself.</p>
+  <p><strong>But it wasn’t the apple.</strong></p>
+  <p><em>“Then it must be something in the crust,”</em> they thought.</p>
+  <p><strong>It wasn’t the crust either.</strong></p>
+  <p>And here’s the part that made the LEAST sense:</p>
+  <p><strong>The pie had more added sugar than practically any other food they tested…</strong></p>
+  <p>And yet it produced the best insulin response.</p>
+  <p>A food with more sugar. With a better glycemic response.</p>
+  <p><em>They tested the fat. That wasn’t it.</em></p>
+  <p><em>They tested the egg. That wasn’t it.</em></p>
+  <p>One by one, the ingredients were eliminated.</p>
+  <p>Until exactly one remained.</p>
+  <p>The only one nobody would suspect, because it was there just for the aroma, simply as a finishing touch.</p>
+  <p>That little spoonful we sprinkle on top of the pie and don’t even count as an ingredient:</p>
+  <p class="pull"><em>Cinnamon</em></p>
+
+  <figure><img src="assets/07-dr-richard-anderson-holding-a-cinnamon-stick-in.webp" width="1130" height="696" loading="lazy" decoding="async" alt="Dr. Richard Anderson holding a cinnamon stick in his lab"></figure>
+
+  <h2>What Was Inside the Cinnamon Changed Everything…</h2>
+
+  <p>So Anderson and his team went back to the lab and isolated the compound in cinnamon that was doing it.</p>
+  <p>Its name is <strong>MHCP</strong> <em>(methylhydroxychalcone polymer).</em></p>
+
+  <figure><img src="assets/08-chart-effect-of-cinnamon-extract-on-blood-glucos.webp" width="1400" height="1126" loading="lazy" decoding="async" alt="Chart: effect of cinnamon extract on blood glucose levels over 120 minutes"></figure>
+
+  <p>You don’t need to memorize that name, but what this compound does is the reason you’re reading this today.</p>
+  <p><strong><em>Here’s what almost nobody explains properly:</em></strong></p>
+  <p>Your body is probably still producing insulin.</p>
+  <p>The problem is that your cells have stopped listening to insulin.</p>
+  <p class="pull">This is called: <em>Insulin Resistance</em></p>
+  <p>And that’s why your blood sugar stays high no matter how “carefully” you eat.</p>
+  <p>Here’s how it works:</p>
+  <p>Insulin is the key.</p>
+  <p>The cell is the door.</p>
+  <p>Glucose is what needs to get inside.</p>
+  <p>With insulin resistance, the key tries to turn, but the door is stuck because the lock has rusted.</p>
+  <p>The door doesn’t open and glucose doesn’t get into the cell.</p>
+  <p>So it stays circulating through your bloodstream, your kidneys, your nerves, your eyes…</p>
+
+  <figure><img src="assets/09-diagram-insulin-resistance-and-why-your-blood-su.webp" width="1400" height="933" loading="lazy" decoding="async" alt="Diagram: insulin resistance and why your blood sugar stays high"></figure>
+
+  <p>Because it isn’t entering your cells as efficiently as it should.</p>
+  <p>That’s why simply thinking:</p>
+  <p><strong><em>“My blood sugar is high because I’m eating too much sugar”</em></strong></p>
+  <p>Is partially wrong.</p>
+
+  <figure><img src="assets/10-sciencedaily-scientists-claim-high-blood-sugar-i.webp" width="1400" height="669" loading="lazy" decoding="async" alt="ScienceDaily: Scientists claim high blood sugar is linked to insulin resistance"></figure>
+
+  <p>Of course diet matters. But it isn’t the main point.</p>
+  <p>There’s another question:</p>
+  <p><strong><em>Are your cells still responding properly to insulin?</em></strong></p>
+  <p>Because if the answer is “no”…</p>
+  <p>You can spend all day trying to control what goes into your mouth…</p>
+  <p>While ignoring what’s happening inside your cells.</p>
+  <p>Now understand what Anderson discovered:</p>
+  <p>MHCP does exactly what insulin is supposed to do, but can no longer do on its own.</p>
+  <p>It helps the cells “open the door” again so glucose can get inside.</p>
+  <p class="pull">Anderson called it the most significant scientific discovery he had seen in 25 years of his career.</p>
+
+  <figure><img src="assets/11-time-cover-dr-richard-anderson-may-have-discover.webp" width="1400" height="934" loading="lazy" decoding="async" alt="TIME cover: Dr. Richard Anderson may have discovered a way to control diabetes with cinnamon"></figure>
+
+  <h2>You’ve Been Misled About Cinnamon This Entire Time…</h2>
+
+  <p>And maybe some people are thinking: <strong><em>“Okay, I’ve already used cinnamon, but I still have high numbers on my meter.”</em></strong></p>
+  <p>For starters, cinnamon can be found in many cabinets across the country.</p>
+  <p>It’s in cakes, coffee, cereal, desserts…</p>
+  <p>You probably have a little jar at home, right?</p>
+  <p>However, most of the cinnamon sold in the United States is not the same kind Dr. Anderson studied.</p>
+  <p>And I’m going to give you the answer the supplement industry doesn’t like to give.</p>
+  <p>If you’ve ever bought a bottle of cinnamon capsules at the drugstore…</p>
+  <p>If you’ve ever put cinnamon powder in your coffee every day for three months hoping the number would go down…</p>
+  <p>And nothing happened…</p>
+  <p>You didn’t fail.</p>
+  <p class="pull">You took the wrong plant.</p>
+
+  <h2>95% of “Cinnamon” Supplements Are Scam…</h2>
+
+  <figure><img src="assets/12-ceylon-cinnamon-vs-cassia-cinnamon-side-by-side.jpg" width="1400" height="934" loading="lazy" decoding="async" alt="Ceylon cinnamon vs Cassia cinnamon side by side"></figure>
+
+  <p>If you’ve tried cinnamon before and it did nothing for your blood sugar, you probably took <strong>Cassia</strong>.</p>
+  <p>It’s a cheaper bark from China.</p>
+  <p>Ceylon, which is <em>Cinnamomum verum</em>. The scientific name that literally means “true cinnamon” — only grows in a narrow strip of land in <strong>southwestern Sri Lanka</strong>.</p>
+
+  <figure><img src="assets/13-ceylon-bark-being-peeled-by-hand-in-sri-lanka.gif" width="760" height="568" loading="lazy" decoding="async" alt="Ceylon bark being peeled by hand in Sri Lanka"></figure>
+
+  <p>There, it is harvested by hand.</p>
+  <p>Ceylon bark is harvested by hand from the thin inner layer of the trunk and rolled into extremely fine layers — you can count ten or more paper-thin sheets inside a single Ceylon stick.</p>
+  <p>Cassia, on the other hand, is a single thick bark that curls in on itself. Industrial harvesting, at scale, cheap.</p>
+  <p>That’s why Ceylon costs much more.</p>
+  <p>And that’s exactly why the supplement industry uses Cassia.</p>
+  <p>And most brands sell it as if it were cinnamon.</p>
+  <p>Legally, they can.</p>
+  <p>Because the word “cinnamon” on the label does not require anyone to tell you <strong>which species</strong> is inside.</p>
+  <p>Cassia and Ceylon are different plants.</p>
+  <p>Similar genera, distinct species, compositions that have nothing to do with each other.</p>
+  <p class="pull">It’s the difference between a horse and a zebra.</p>
+
+  <figure><img src="assets/14-article-ceylon-cinnamon-vs-cassia-why-the-differ.webp" width="1134" height="854" loading="lazy" decoding="async" alt="Article: Ceylon Cinnamon vs. Cassia — why the difference matters"></figure>
+
+  <h2>A Mistake That Cost American Healthcare Centuries</h2>
+
+  <figure><img src="assets/15-historic-painting-of-the-colonial-cinnamon-trade.webp" width="750" height="495" loading="lazy" decoding="async" alt="Historic painting of the colonial cinnamon trade"></figure>
+
+  <p>This wasn’t a recent accident.</p>
+  <p>It was a commercial decision made centuries ago.</p>
+  <p>Ceylon cinnamon was once one of the most expensive spices in the world.</p>
+  <p>The Portuguese, Dutch, and British <strong>fought wars</strong> to control its trade.</p>
+  <p>It was difficult to grow. Difficult to harvest. Difficult to transport.</p>
+  <p>So the market found a solution.</p>
+  <p>They found a similar bark, thicker, tougher, much cheaper — <strong>Cassia</strong>, from China and Indonesia.</p>
+
+  <!-- ===== PROVA / VIDEO Real vs Fake (48s, com controles) ===== -->
+  <figure class="video">
+    <video src="assets/16-real-ceylon-cinnamon-compared-side-by-side-with.mp4" poster="assets/17-real-ceylon-cinnamon-compared-side-by-side-with.webp" width="720" height="680" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-label="Real Ceylon cinnamon compared side by side with fake Cassia cinnamon"></video>
+    <figcaption>Ceylon (real) vs. Cassia (the cheap bark sold as “cinnamon”).</figcaption>
+  </figure>
+
+  <p>It had a similar smell.</p>
+  <p>A stronger, harsher flavor, but close enough.</p>
+  <p>And it cost a fraction of the price.</p>
+  <p>So it was given the same name.</p>
+  <p>And sold on the same shelf.</p>
+  <p>Today, the overwhelming majority of “cinnamon” sold around the world is Cassia.</p>
+
+  <figure><img src="assets/18-supermarket-shelf-full-of-cassia-cinnamon-jars.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Supermarket shelf full of Cassia cinnamon jars"></figure>
+
+  <p>The product that became famous for the benefits of Ceylon…</p>
+  <p>Is sold as if it were the same thing.</p>
+  <p>While real Ceylon continues leaving Sri Lanka in limited quantities, for those who actually know what they’re looking for.</p>
+
+  <h2>And Cassia Isn’t Just Ineffective. It Carries a Risk.</h2>
+
+  <p>Cassia contains a substance called <strong>coumarin</strong>.</p>
+  <p>The FDA itself measured the levels.</p>
+  <p>Cassia cinnamon contains, on average, around <strong>3,000 mg of coumarin per kilogram</strong>.</p>
+  <p>And why does that matter?</p>
+  <p>Because coumarin, when used daily and continuously, is associated with liver stress and liver damage.</p>
+
+  <figure><img src="assets/19-article-love-cinnamon-here-is-when-it-can-be-ris.webp" width="1400" height="804" loading="lazy" decoding="async" alt="Article: Love cinnamon? Here is when it can be risky for your liver"></figure>
+
+  <p>The FDA established a tolerable daily intake limit of <strong>0.1 mg of coumarin per kilogram of body weight</strong>.</p>
+
+  <figure><img src="assets/20-fda-alert-concerning-certain-cinnamon-products-d.webp" width="1400" height="216" loading="lazy" decoding="async" alt="FDA alert concerning certain cinnamon products due to elevated levels of coumarin"></figure>
+  <figure><img src="assets/21-bbc-the-fda-sets-a-limit-on-cinnamon-consumption.webp" width="1356" height="430" loading="lazy" decoding="async" alt="BBC: The FDA sets a limit on cinnamon consumption due to coumarin, toxic to the liver"></figure>
+  <figure><img src="assets/22-fda-gras-classification-listing-ceylon-cinnamon.webp" width="1324" height="444" loading="lazy" decoding="async" alt="FDA GRAS classification listing Ceylon cinnamon as safe"></figure>
+
+  <p>For a 132-pound adult, that’s 6 mg per day. For a lifetime.</p>
+  <p>One teaspoon of Cassia alone can exceed that.</p>
+  <p>And that’s why the FDA explicitly recommends that people who consume cinnamon frequently <strong>use Ceylon</strong>.</p>
+
+  <div class="warn">
+    <p>Now stop and think about what that means for you:</p>
+    <p>If you’re someone with blood sugar problems, taking the wrong cinnamon every single day, for years…</p>
+    <p><strong>You’re putting yourself in serious danger.</strong></p>
+    <p>You did everything thinking you were taking care of your health.</p>
+    <p>And you bought the wrong bottle.</p>
+  </div>
+
+  <hr class="rule">
+
+  <h2>And There’s a Second Problem, Which Is Dosage</h2>
+
+  <p>Let’s say you managed to get real Ceylon.</p>
+  <p>Powdered. In the cabinet. A spoonful in your coffee.</p>
+  <p>Even then, it would hardly solve the problem.</p>
+  <p>Because the concentrations of active compounds studied don’t appear in a pinch of seasoning.</p>
+  <p>The natives of Sri Lanka don’t use just a pinch, they consume this cinnamon <strong>from childhood.</strong> It is present in all of their meals throughout the day, for years and decades.</p>
+  <p class="pull">That is exactly why this region records the lowest diabetes rates in the world.</p>
+  <p>So, to get the same benefit that the people of Sri Lanka naturally have, you would need:</p>
+
+  <ul class="cost-list">
+    <li><strong>1. The right species</strong> — DNA-verified Ceylon. In its purest possible form.</li>
+    <li><strong>2. An extremely potent concentration</strong> — equivalent to thousands of milligrams of raw bark. Something no current supplement or store-bought jar delivers.</li>
+  </ul>
+
+  <p>Having one without the other doesn’t work.</p>
+  <p>And that’s where practically every product on the market fails on at least one of those two fronts.</p>
+  <p><strong>That’s why we decided to solve both.</strong></p>
+
+  <hr class="rule">
+
+  <h2>Introducing the Breakthrough Solution for Blood Sugar</h2>
+
+  <p>After months of work, together with <strong>Dr. Richard Anderson’s own team</strong> and in partnership with <strong>NLabs</strong>, one of the most respected laboratories in the U.S. and the world…</p>
+
+  <figure><img src="assets/23-nlabs-research-facility.webp" width="1400" height="788" loading="lazy" decoding="async" alt="NLabs research facility"></figure>
+
+  <p class="hl-lead"><span class="hl">We created <strong>Cinna Shield®</strong>.</span></p>
+
+  <figure><img src="assets/24-cinna-shield-bottle.webp" width="1122" height="1402" loading="lazy" decoding="async" alt="Cinna Shield bottle"></figure>
+
+  <p><strong>Real Ceylon that comes directly from the bark of trees in Sri Lanka.</strong></p>
+  <p>A completely different species from Cassia.</p>
+  <p>Cinna Shield® uses <strong>DNA-verified Ceylon</strong> in a concentrated <strong>12:1 extract</strong>.</p>
+
+  <figure><img src="assets/25-cinna-shield-product-details-true-ceylon-extract.webp" width="1086" height="1328" loading="lazy" decoding="async" alt="Cinna Shield product details: true Ceylon extract, 12:1 concentration, 90-day guarantee" class="quiz-open" role="button" tabindex="0"></figure>
+  <a class="cta cta-attached" href="#">Check If I Qualify →</a>
+
+  <p>A single capsule delivers the equivalent of <strong>7,200 mg of raw bark</strong>.</p>
+  <p>Let me translate those two numbers for you, because they are the entire product.</p>
+
+  <h4>“DNA-Verified” Means the Plant Was Tested, Not Just Purchased</h4>
+  <p>DNA testing identifies the botanical species of the raw material.</p>
+  <p>Not the smell. Not the color.</p>
+  <p><strong>The species.</strong></p>
+  <p>It’s the only way to guarantee that what went into the capsule is <em>Cinnamomum verum</em>, and not the cheap Chinese bark the industry sells under the same name.</p>
+
+  <h4>“12:1” Means 12 Kilograms of Bark Are Used to Make 1 Kilogram of Extract</h4>
+  <p>That’s why one capsule delivers the equivalent of 7,200 mg of raw bark.</p>
+  <p>You couldn’t eat that.</p>
+  <p>Not as powder, not in coffee, not sprinkled over fruit.</p>
+  <p>Not every day.</p>
+  <p>And that’s the distance between “using cinnamon as a seasoning” and “using cinnamon as a defense and control strategy for diabetes.”</p>
+  <p class="pull">That’s the difference that will show up on your meter.</p>
+
+  <hr class="rule">
+
+  <!-- ===== DEPOIMENTOS — mesma estrutura da metabolae.com ===== -->
+  <section class="reviews">
+    <div class="inner">
+      <p class="top-stars">★★★★★</p>
+      <h2>Real Stories, <em>Real Results</em></h2>
+      <p class="sub">Honest experiences with Cinna Shield® Ceylon Cinnamon</p>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-row"><img src="assets/26-marquee-01.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/27-marquee-02.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/28-marquee-03.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/29-marquee-04.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/30-marquee-05.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/31-marquee-06.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/32-marquee-07.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/33-marquee-08.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/34-marquee-09.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/35-marquee-10.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/36-marquee-11.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/37-marquee-12.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/38-marquee-13.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/39-marquee-14.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/40-marquee-15.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/41-marquee-16.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/26-marquee-01.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/27-marquee-02.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/28-marquee-03.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/29-marquee-04.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/30-marquee-05.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/31-marquee-06.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/32-marquee-07.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/33-marquee-08.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/34-marquee-09.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/35-marquee-10.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/36-marquee-11.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/37-marquee-12.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/38-marquee-13.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/39-marquee-14.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/40-marquee-15.webp" width="300" height="225" alt="" aria-hidden="true"><img src="assets/41-marquee-16.webp" width="300" height="225" alt="" aria-hidden="true"></div>
+    </div>
+
+    <div class="inner">
+      <div class="track" id="revTrack">
+        <article class="rev">
+          <p class="score"><b>5.0</b><span class="stars">★★★★★</span></p>
+          <h4>Finally Back in Control!</h4>
+          <p>For years my blood sugar was all over the place and every reading stressed me out. I felt like no matter how clean I ate or how hard I tried, my numbers never stayed consistent. Since starting Cinna Shield, everything feels steadier and those afternoon crashes don’t control me anymore. My energy lasts through the day and I’m not constantly reaching for caffeine or sugar. For the first time in a long time, I feel like I’m back in charge of my health.</p>
+          <div class="foot">
+            <div class="who">
+              <img src="assets/42-jacob-m.webp" width="96" height="96" loading="lazy" alt="Jacob M.">
+              <span class="nm">Jacob M.</span>
+              <span class="vf">✓ Verified Customer</span>
+            </div>
+            <div class="tags"><span class="tag">Stable Sugar</span><span class="tag">Steady Energy</span></div>
+          </div>
+        </article>
+        <article class="rev">
+          <p class="score"><b>5.0</b><span class="stars">★★★★★</span></p>
+          <h4>Mornings Finally Feel Clear</h4>
+          <p>I used to start every morning tired, foggy, and already worrying about what my numbers would look like. I tried every so-called ‘healthy fix’ but nothing really moved the needle. With Cinna Shield, my mornings feel clear, my cravings are under control, and my energy is steady throughout the day. I’m not dealing with those late-night sugar crashes anymore and I finally feel balanced. It feels good knowing I’ve found something simple that actually works.</p>
+          <div class="foot">
+            <div class="who">
+              <img src="assets/43-david-l.webp" width="96" height="96" loading="lazy" alt="David L.">
+              <span class="nm">David L.</span>
+              <span class="vf">✓ Verified Customer</span>
+            </div>
+            <div class="tags"><span class="tag">Morning Clarity</span><span class="tag">Balanced Cravings</span></div>
+          </div>
+        </article>
+        <article class="rev">
+          <p class="score"><b>5.0</b><span class="stars">★★★★★</span></p>
+          <h4>My Doctor Asked What I Changed!</h4>
+          <p>I was skeptical about another cinnamon supplement because I’d tried so many that did nothing. But my neighbor insisted this Ceylon one was different because it’s concentrated instead of powder. After 8 weeks, my doctor noticed my numbers were more stable and asked what I’d changed. I told him about the Ceylon cinnamon and he said whatever I’m doing, keep it up. No stomach issues like the other brands gave me either.</p>
+          <div class="foot">
+            <div class="who">
+              <img src="assets/44-margaret-r.webp" width="96" height="96" loading="lazy" alt="Margaret R.">
+              <span class="nm">Margaret R.</span>
+              <span class="vf">✓ Verified Customer</span>
+            </div>
+            <div class="tags"><span class="tag">Doctor Approved</span><span class="tag">Gentle Digestion</span></div>
+          </div>
+        </article>
+        <article class="rev">
+          <p class="score"><b>4.9</b><span class="stars">★★★★★</span></p>
+          <h4>Wish I’d Known About Ceylon vs Cassia Years Ago!</h4>
+          <p>My husband had been taking cinnamon capsules from the drugstore for blood sugar support, but they weren’t doing much and sometimes caused heartburn. I researched and learned most store brands use Cassia cinnamon, which can stress your liver. Cinna Shield uses real Ceylon cinnamon. Within a month, his energy was steadier and his morning readings improved from the 140s to consistent 120s. The capsules are much easier on his stomach too.</p>
+          <div class="foot">
+            <div class="who">
+              <img src="assets/45-patricia-s.webp" width="96" height="96" loading="lazy" alt="Patricia S.">
+              <span class="nm">Patricia S.</span>
+              <span class="vf">✓ Verified Customer</span>
+            </div>
+            <div class="tags"><span class="tag">True Ceylon</span><span class="tag">Stomach Friendly</span></div>
+          </div>
+        </article>
+        <article class="rev">
+          <p class="score"><b>5.0</b><span class="stars">★★★★★</span></p>
+          <h4>Quality You Can Actually Feel Working!</h4>
+          <p>As a retired nurse, I’m very particular about supplements. Most are cheap fillers with barely any active ingredients. Cinna Shield Ceylon Cinnamon is clearly premium — you can tell by the 12-to-1 concentration from authentic Sri Lankan Ceylon bark. I’ve been taking it for 3 months and my energy levels are the most stable they’ve been in years. No more 2 PM sugar cravings, no digestive upset, and my labs showed improvements. Worth every penny.</p>
+          <div class="foot">
+            <div class="who">
+              <img src="assets/46-joyce-t.webp" width="96" height="96" loading="lazy" alt="Joyce T.">
+              <span class="nm">Joyce T.</span>
+              <span class="vf">✓ Verified Customer</span>
+            </div>
+            <div class="tags"><span class="tag">Premium Quality</span><span class="tag">Stable Energy</span></div>
+          </div>
+        </article>
+        <article class="rev">
+          <p class="score"><b>5.0</b><span class="stars">★★★★★</span></p>
+          <h4>The First Thing That Works</h4>
+          <p>I’ve thrown away so much money on powders, gummies, and sugar support blends that made big promises but never delivered. Nothing ever stuck and I just kept feeling more frustrated. Cinna Shield was different from the start — one capsule a day actually gave me the steady energy I’d been missing for years. My focus is sharper, I don’t hit the wall in the afternoons, and I finally feel consistent. It’s the first product I can honestly say has changed my daily routine.</p>
+          <div class="foot">
+            <div class="who">
+              <img src="assets/47-michael-t.webp" width="96" height="96" loading="lazy" alt="Michael T.">
+              <span class="nm">Michael T.</span>
+              <span class="vf">✓ Verified Customer</span>
+            </div>
+            <div class="tags"><span class="tag">Daily Focus</span><span class="tag">Lasting Energy</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="dots" id="revDots"></div>
+      <div class="carousel-nav">
+        <button type="button" aria-label="Previous" onclick="revScroll(-1)">‹</button>
+        <button type="button" aria-label="Next" onclick="revScroll(1)">›</button>
+      </div>
+      <p class="disclaimer-mini">Individual results may vary*</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ===== TIMELINE: imagem à esquerda, linha do tempo à direita ===== -->
+<section class="band">
+  <h2>What Happens When Cinna Shield® Enters Your Life...</h2>
+
+  <div class="timeline-wrap">
+
+    <div class="timeline-media">
+      <img src="assets/48-chart-a1c-improvement-from-start-to-3-months.webp" width="887" height="887" loading="lazy" decoding="async" alt="Chart: A1C improvement from start to 3 months">
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="when"><svg class="cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1.6" y="3.6" width="16.8" height="14.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M1.6 8.2h16.8" stroke="currentColor" stroke-width="1.7"/><path d="M6.2 1.6v3.4M13.8 1.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><text x="10" y="15.4" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="6.4" font-weight="700" fill="currentColor">1-3</text></svg>DAYS 1–3</span>
+        <ul>
+          <li>The brain fog disappears.</li>
+          <li>Sugar cravings decrease.</li>
+          <li>Your body stops asking for sugar.</li>
+        </ul>
+        <p class="kicker">You feel that something has changed.</p>
+      </div>
+      <div class="tl-item">
+        <span class="when"><svg class="cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1.6" y="3.6" width="16.8" height="14.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M1.6 8.2h16.8" stroke="currentColor" stroke-width="1.7"/><path d="M6.2 1.6v3.4M13.8 1.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><text x="10" y="15.4" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="6.4" font-weight="700" fill="currentColor">W1</text></svg>WEEK 1</span>
+        <ul>
+          <li>Your meter shows a number you haven’t seen in years.</li>
+          <li>Your energy comes back.</li>
+          <li>Your mood improves.</li>
+        </ul>
+        <p class="kicker">You start believing again.</p>
+      </div>
+      <div class="tl-item">
+        <span class="when"><svg class="cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1.6" y="3.6" width="16.8" height="14.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M1.6 8.2h16.8" stroke="currentColor" stroke-width="1.7"/><path d="M6.2 1.6v3.4M13.8 1.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><text x="10" y="15.4" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="6.4" font-weight="700" fill="currentColor">W2</text></svg>WEEK 2</span>
+        <ul>
+          <li>Your post-meal blood sugar stabilizes.</li>
+          <li>That sleepiness after lunch? <strong>Gone.</strong></li>
+          <li>Your body is finally using glucose the way it should.</li>
+        </ul>
+        <p class="kicker">The door that was stuck has started to open.</p>
+      </div>
+      <div class="tl-item">
+        <span class="when"><svg class="cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1.6" y="3.6" width="16.8" height="14.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M1.6 8.2h16.8" stroke="currentColor" stroke-width="1.7"/><path d="M6.2 1.6v3.4M13.8 1.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><text x="10" y="15.4" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="6.4" font-weight="700" fill="currentColor">M1</text></svg>MONTH 1</span>
+        <ul>
+          <li>You don’t recognize the tired person in the mirror.</li>
+          <li>Your sleep is deeper.</li>
+          <li>Your skin improves.</li>
+        </ul>
+        <p class="kicker">Your doctor will ask what you did.</p>
+      </div>
+      <div class="tl-item">
+        <span class="when"><svg class="cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1.6" y="3.6" width="16.8" height="14.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M1.6 8.2h16.8" stroke="currentColor" stroke-width="1.7"/><path d="M6.2 1.6v3.4M13.8 1.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><text x="10" y="15.4" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="6.4" font-weight="700" fill="currentColor">M2</text></svg>MONTH 2</span>
+        <ul>
+          <li>You no longer calculate carbs.</li>
+          <li>You no longer run away from food.</li>
+          <li>And you no longer live in fear of eating.</li>
+        </ul>
+        <p class="kicker">The anxiety is gone.</p>
+      </div>
+      <div class="tl-item">
+        <span class="when"><svg class="cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1.6" y="3.6" width="16.8" height="14.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M1.6 8.2h16.8" stroke="currentColor" stroke-width="1.7"/><path d="M6.2 1.6v3.4M13.8 1.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><text x="10" y="15.4" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-size="6.4" font-weight="700" fill="currentColor">M6</text></svg>MONTH 6</span>
+        <ul>
+          <li>Diabetes is no longer the center of your life.</li>
+          <li>You wake up without fear.</li>
+          <li>Eat without guilt.</li>
+          <li>Plan for the future without the shadow of the disease.</li>
+        </ul>
+        <p class="kicker">You’re living again.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <hr class="rule">
+
+  <h2>Why Most People Fail (And How You Won’t)</h2>
+  <p>Most people who begin treatment with Cinna Shield® <strong>quit in week 3</strong>.</p>
+  <p><em>Why?</em></p>
+  <p>Because the body starts responding quickly — and they think <strong>they’re already cured</strong>.</p>
+  <p>Or because the deeper result takes a little longer — and they think <strong>it’s not going to work</strong>.</p>
+  <p><strong>Both are wrong.</strong></p>
+  <p>The first signs come in the first few days.</p>
+  <p>But the <strong>real transformation</strong> — the one where you trust your body again, where diabetes stops feeling like a sentence, where you look in the mirror and see a new person...</p>
+  <p><strong>That takes months.</strong></p>
+  <p>Not because the formula is slow.</p>
+  <p>Because <strong>cellular damage does not reverse in weeks</strong>. That’s biology.</p>
+  <p>And no product on the planet can change that.</p>
+
+  <hr class="rule">
+
+  <!-- ===== PRA QUEM É / PRA QUEM NÃO É — formatação dinâmica em 2 colunas ===== -->
+<section class="band">
+  <h2>Is Cinna Shield® Made for You?</h2>
+  <p>So before you make the decision to begin treatment with Cinna Shield®, you first need to know whether this is for you. I’d rather tell you the truth than sell you an illusion.</p>
+
+  <div class="fit-grid">
+    <div class="fit-col fit-yes">
+      <div class="hd">✓ 4 SIGNS IT WAS MADE FOR YOU</div>
+      <ul>
+        <li><b>For those who have already tried everything.</b> Metformin, injections, diets, exercise, grocery-store cinnamon or internet scams, cheap supplements. Nothing worked. You’re not the exception — you’re the rule. But that changes now.</li>
+        <li><b>For those who still have hope.</b> If you’ve already given up on getting better, this text isn’t for you. But if there’s still a thread of hope that your body can respond... you’re in the right place.</li>
+        <li><b>For those who want to stop depending on medication.</b> Medications control. They don’t cure. You don’t want another crutch. You want to get out of the pharmacy.</li>
+        <li><b>For those who want to stop living in fear.</b> Fear of eating. Fear of the meter. Fear of the next appointment. Fear of complications. That fear can end.</li>
+      </ul>
+    </div>
+
+    <div class="fit-col fit-no">
+      <div class="hd">✕ WHO THIS IS NOT FOR</div>
+      <ul>
+        <li><b>Not for people who want results in one week.</b> Insulin resistance didn’t form in days. It won’t disappear in days. If you don’t have the patience for 8 to 16 weeks of treatment, don’t buy — you’ll quit before the results appear.</li>
+        <li><b>Not for people who have never investigated the cause.</b> If you’ve never had tests done, never spoken with a doctor, never understood what’s happening inside your body... start there. Even if you don’t buy anything.</li>
+        <li><b>Not for people looking for the cheapest option.</b> If price is the only factor, buy generic metformin. It’ll cost less.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <hr class="rule">
+
+  <h2>The True Cost of Not Solving This…</h2>
+
+  <figure><img src="assets/49-man-overwhelmed-by-medical-bills-pill-bottles-an.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Man overwhelmed by medical bills, pill bottles and a glucose meter"></figure>
+
+  <p>Let’s be honest here, because I know you’ve already spent a lot of money.</p>
+  <p>I’m not talking only about the price of Cinna Shield®.</p>
+  <p>I’m talking about the cost of <strong>continuing exactly as you are</strong>.</p>
+  <p>Let’s do the math:</p>
+
+  <ul class="cost-list">
+    <li><strong>The Metformin</strong> you take every day may be cheap, but you know it only treats the symptom, not the cause. And you’ve already felt the side effects: diarrhea, nausea, fatigue, that constant discomfort that follows you throughout the entire day.</li>
+    <li><strong>Injectable medications</strong> like Ozempic, Mounjaro, or Trulicity can cost $800 to <strong>$2,500 per month</strong> — depending on your coverage — and come with a frightening list of side effects: severe nausea, vomiting, abdominal pain, risk of pancreatitis, and even suicidal thoughts in some cases.</li>
+    <li><strong>Appointments with endocrinologists</strong> who charge <strong>$200 to $400 per visit</strong>, and you walk out with the same prescription as always, except the dosage has been increased.</li>
+    <li><strong>The “miracle” supplements</strong> you bought at the drugstore or online: cinnamon powder, chromium, berberine — $50 <em>here</em>, $80 there, $120 somewhere else. And none of them did what they promised.</li>
+    <li><strong>The restrictive diet</strong> you try to follow, but that leaves you hungry, irritated, and frustrated, spending a fortune on “functional” foods that never solve the resistance inside your cells.</li>
+  </ul>
+
+  <p>And worst of all: <strong>the cost that doesn’t show up on your credit card statement.</strong></p>
+  <p>The problem <strong>was never the price of the medication</strong>.</p>
+  <p>The problem is that <strong>it never ends</strong>.</p>
+  <p>There is no final blister pack. There is no month when you buy it and you’re cured.</p>
+  <p>Imagine 10, 20, 30 years from now... still opening the same blister pack. Still pricking your finger every day. Still avoiding sweets. Still afraid.</p>
+  <p>Add up what you’ve already spent on appointments, tests, medications, supplements that didn’t work.</p>
+  <p>Then calculate how many years are still ahead.</p>
+  <p class="pull">That’s living like a hostage.</p>
+  <p>And worse: diabetes doesn’t stay the same. It <strong>gets worse</strong>.</p>
+  <p>If you do nothing now, 6 months from now your blood sugar will be higher. Your body will be more inflamed.</p>
+  <p><strong>Doing nothing isn’t free.</strong></p>
+  <p>You pay every day — with the energy you don’t have, with the fear that grows, with the number on the meter that refuses to go down no matter what you do…</p>
+
+  <hr class="rule">
+
+  <h2>You’ve Already Spent Too Much Money on Solutions That Don’t Treat the Cause…</h2>
+  <p>Here’s the truth nobody told you:</p>
+  <p>Metformin and other medications <strong>do not reverse insulin resistance</strong>. They simply <strong>force your body to produce more insulin</strong> or <strong>make your liver produce less glucose</strong>.</p>
+  <p>That doesn’t solve the real problem: <strong>your cells have stopped listening to insulin</strong>.</p>
+  <p>It’s like trying to open a door with a rusty key — and instead of fixing the lock, you simply buy more keys and keep trying to turn harder.</p>
+  <p>But none of them <strong>fix the lock</strong>.</p>
+  <p class="pull">Cinna Shield®, with its MHCP, actually fixes the lock.</p>
+  <p>It helps your cells <strong>reopen the door</strong> so glucose can enter naturally.</p>
+  <p>Without forcing. Without overloading your pancreas. Without the devastating side effects of medications.</p>
+
+  <hr class="rule">
+
+  <h2>The Decision My Team Hated…</h2>
+  <p>So I know you’ve already spent a lot of money.</p>
+  <p>Appointments, tests, medications, supplements, diets, apps, meters...</p>
+  <p>Altogether, you’ve already spent thousands.</p>
+  <p>And you’re still here. Reading. Looking for a real solution.</p>
+  <p>That’s why I did something my team hated.</p>
+  <p>I could charge a lot per bottle.</p>
+  <p>Many people would pay. Because it works.</p>
+  <p>But I don’t want to create another barrier for people who have already lost too much time and money.</p>
+  <p class="pull">That’s why today you can get access to Cinna Shield® with 70% off the complete 6-month package.</p>
+
+  <figure><img src="assets/50-cinna-shield-bottle-30-capsules-of-ceylon-cinnam.webp" width="1100" height="1375" loading="lazy" decoding="async" alt="Cinna Shield® bottle — 30 capsules of Ceylon cinnamon extract"></figure>
+
+  <hr class="rule">
+
+  <h2>How It Works…</h2>
+  <p>First, you answer <strong>5 quick questions</strong> to calculate your <strong>Insulin Resistance Index</strong>.</p>
+  <p>I need to know your age, how long this has been happening, what your blood sugar looks like now, and what you’ve already tried.</p>
+  <p>At the end, you’ll find out whether Cinna Shield® is compatible with your body. And if it is, your price and complete package will appear in the results.</p>
+  <p><strong>Don’t wait.</strong> Click the button and check your index before this batch sells out.</p>
+
+  <!-- TROCAR href PELO LINK DO QUIZ -->
+  <a class="cta" href="#">Check My Insulin Resistance Index →</a>
+  <p class="cta-note">It’s the price of living again without fear of food. Without fear of the meter. Without fear of the future.</p>
+
+  <hr class="rule">
+
+  <div class="guarantee">
+    <img class="seal" src="assets/51-90-day-money-back-guarantee.webp" width="558" height="560" loading="lazy" decoding="async" alt="90-day money-back guarantee">
+    <h3>You Have Nothing to Lose…</h3>
+    <p>I know you’ve been misled before. So I’m going to remove all the risk for you.</p>
+    <p>Try <strong>Cinna Shield®</strong> for <strong>90 full days</strong>. Use the bottles.</p>
+    <p>Watch for the first signs:</p>
+    <ul>
+      <li>Your blood sugar beginning to stabilize.</li>
+      <li>Your energy returning throughout the day.</li>
+      <li>That post-meal sleepiness decreasing.</li>
+      <li>Your meter showing numbers you haven’t seen in years.</li>
+    </ul>
+    <p>If, after 90 days of consistent use, <strong>your blood sugar does not improve</strong>, if you don’t feel that your body is finally responding, or if for any reason you are not 100% satisfied, send my team an email and ask for your money back.</p>
+    <p><strong>Empty bottles.</strong> No questions. No hassle. Nobody is going to tell you that you “did something wrong.”</p>
+    <p>If you don’t get the result you’re looking for, or you believe there is a better solution on the market for your condition, the customer support team <strong>will refund 100% of your purchase price</strong>.</p>
+    <p>This isn’t a fake guarantee. This isn’t a marketing trick.</p>
+    <p><strong>This is confidence in the revolutionary solution we developed.</strong></p>
+    <p>You keep the result or you keep the money.</p>
+    <p>The only thing you cannot do is <strong>stay exactly where you are</strong>.</p>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===== DOIS CAMINHOS ===== -->
+<section class="band">
+  <h2>Six Months From Now, You’ll Be Living One of Two Stories</h2>
+
+  <div class="paths">
+    <div class="path path-1">
+      <img src="assets/52-path-1-the-same-tired-defeated-routine-six-month.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Path 1 — the same tired, defeated routine six months from now">
+      <div class="hd">PATH 1 — FAMILIAR</div>
+      <div class="body">
+        <p>Another appointment. Another test. Another medication. Another diet that didn’t work.</p>
+        <p>But here’s the part you need to feel: <strong>Diabetes doesn’t stand still.</strong></p>
+        <p>It doesn’t wait for you to decide.</p>
+        <p>Every month that passes, the resistance increases. Inflammation advances. Complications get closer.</p>
+        <p>Path 1 isn’t your blood sugar staying where it is. Path 1 is you six months from now, with worse numbers, more fear, more restrictions, more guilt.</p>
+        <p>It’s looking in the mirror and seeing someone 10 years older — and slowly starting to accept that this is just how it is.</p>
+      </div>
+    </div>
+
+    <div class="path path-2">
+      <img src="assets/53-path-2-enjoying-breakfast-again-without-fear.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Path 2 — enjoying breakfast again without fear">
+      <div class="hd">PATH 2 — DIFFERENT</div>
+      <div class="body">
+        <p>Six months from now, it’s an ordinary morning.</p>
+        <p>You wake up, walk into the kitchen, have your coffee — without calculating carbs, without fear.</p>
+        <p><strong>You look at the meter and see numbers you haven’t seen in years.</strong></p>
+        <p>You no longer live your life around diabetes.</p>
+        <p>You eat a piece of fruit without guilt. You go out with friends without anxiety. You plan for the future without the shadow of the disease.</p>
+        <p>You go to the doctor and he says: <em>“What did you do? Your numbers look excellent.”</em></p>
+        <p>And you smile. Because you know it wasn’t luck. It was a decision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <p>Now you know the truth.</p>
+  <p>You know why everything you tried until today didn’t work.</p>
+  <p>Answer the 5 questions. Your result appears in less than 1 minute.</p>
+  <p><strong>A new life is waiting for you on the next click.</strong></p>
+
+  <!-- TROCAR href PELO LINK DO QUIZ -->
+  <a class="cta" href="#">Check My Insulin Resistance Index →</a>
+
+  <!-- ===== COMENTÁRIOS ===== -->
+  <section class="comments">
+    <h3>Comments</h3>
+
+    <div class="cmt"><div class="avatar">WB</div><div class="c-body">
+      <p class="c-name">Wilma Becker</p>
+      <p class="c-text">Has anyone tried this yet?</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 4 · 39 min</p>
+    </div></div>
+
+    <div class="cmt"><div class="avatar">MS</div><div class="c-body">
+      <p class="c-name">Maria Schmidt</p>
+      <p class="c-text">This is the best thing I’ve ever used for my blood sugar. My morning readings finally dropped!</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 7 · 16 min</p>
+    </div></div>
+
+    <div class="cmt"><div class="avatar">SL</div><div class="c-body">
+      <p class="c-name">Samantha Logan</p>
+      <p class="c-text">I bought mine for the full price and now it’s 70% off? That’s not fair!</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 4 · 51 min</p>
+    </div></div>
+
+    <div class="cmt"><div class="avatar">MS</div><div class="c-body">
+      <p class="c-name">Monica Smith</p>
+      <p class="c-text">How long does the shipping take?</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 4 · 1 h</p>
+    </div></div>
+
+    <div class="cmt reply"><div class="avatar">WB</div><div class="c-body">
+      <p class="c-name">Wilma Becker</p>
+      <p class="c-text">Hey Monica, I received mine after a week.</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 7 · 24 min</p>
+    </div></div>
+
+    <div class="cmt"><div class="avatar">PR</div><div class="c-body">
+      <p class="c-name">Paula Rowen</p>
+      <p class="c-text">I just ordered mine! I can’t wait</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 4 · 2 h</p>
+    </div></div>
+
+    <div class="cmt reply"><div class="avatar">HL</div><div class="c-body">
+      <p class="c-name">Hanna Lang</p>
+      <p class="c-text">Omg SAME! I saw it was back in stock and ordered immediately. Didn’t want to miss out again.</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 7 · 1 h</p>
+    </div></div>
+
+    <div class="cmt"><div class="avatar">ES</div><div class="c-body">
+      <p class="c-name">Emma Schulz</p>
+      <p class="c-text">Hey <b>Christina</b>, THIS is what you need instead of another useless drugstore cinnamon.</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 2 · 3 h</p>
+    </div></div>
+
+    <div class="cmt reply"><div class="avatar">C</div><div class="c-body">
+      <p class="c-name">Christina</p>
+      <p class="c-text">That’s wild! I just ordered three, one for my mom too.</p>
+      <p class="c-meta"><b>Like</b> · <b>Reply</b> · 7 · 2 h</p>
+    </div></div>
+
+  </section>
+
+</div>
+</article>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>“Results in the Testimonials and Representations may not be typical and individual results may vary.</p>
+    <p>This website is a marketing piece. The owner has a material financial connection to the provider of the goods and services referred to on the site in that it receives compensation for clicks onto the ad or for sales of the product.</p>
+    <p>The story depicted on the website is fictional unless stated otherwise. The results portrayed in the story and in the comments are illustrative, and may not be the results that you achieve using the product. Please consult with your health care practitioner for all your health care needs. The testimonials on this website are individual cases and do not guarantee that you will get the same results.</p>
+    <p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+    <p class="links"><a href="#">Terms of service</a><a href="#">Privacy policy</a> © 2026 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // linha do tempo que desce junto com a rolagem - so no mobile
+  var tl=document.querySelector('.timeline');
+  if(!tl) return;
+  var items=[].slice.call(tl.querySelectorAll('.tl-item'));
+  var mq=window.matchMedia('(max-width:820px)');
+  var calmo=window.matchMedia('(prefers-reduced-motion: reduce)');
+  var pendente=false;
+  function limpar(){
+    tl.classList.remove('tl-scroll');
+    tl.style.removeProperty('--p');
+    items.forEach(function(i){i.classList.remove('on');});
+  }
+  function atualizar(){
+    pendente=false;
+    if(!mq.matches || calmo.matches){ limpar(); return; }
+    tl.classList.add('tl-scroll');
+    var r=tl.getBoundingClientRect();
+    var leitura=window.innerHeight*0.62;               // altura onde o olho esta lendo
+    var h=Math.max(0, Math.min(r.height, leitura - r.top));
+    tl.style.setProperty('--p', h+'px');
+    items.forEach(function(it){
+      it.classList.toggle('on', it.getBoundingClientRect().top + 14 <= leitura);
+    });
+  }
+  function agendar(){ if(!pendente){ pendente=true; requestAnimationFrame(atualizar); } }
+  window.addEventListener('scroll',agendar,{passive:true});
+  window.addEventListener('resize',agendar);
+  if(mq.addEventListener) mq.addEventListener('change',agendar); else if(mq.addListener) mq.addListener(agendar);
+  atualizar();
+})();
+(function(){
+  var vs=document.querySelectorAll('video[data-lazy]');
+  if(!vs.length) return;
+  function attach(v){                      // define as fontes UMA vez so
+    if(v.dataset.attached) return;
+    v.dataset.attached='1';
+    [].forEach.call(v.querySelectorAll('source'),function(s){ if(!s.src) s.src=s.dataset.src; });
+    v.preload='auto';
+    v.load();
+    v.addEventListener('canplay',function(){ v.play().catch(function(){}); },{once:true});
+  }
+  function load(v){ attach(v); v.play().catch(function(){}); }
+  if(!('IntersectionObserver' in window)){[].forEach.call(vs,load);return;}
+  // aquece o download assim que a pagina termina de carregar (rede ociosa)
+  var warm=function(){[].forEach.call(vs,attach);};
+  if('requestIdleCallback' in window) requestIdleCallback(warm,{timeout:2500}); else setTimeout(warm,1200);
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){
+      if(e.isIntersecting){ load(e.target); e.target.play().catch(function(){}); }
+      else if(e.target.dataset.loaded){ e.target.pause(); }
+    });
+  },{rootMargin:'1500px 0px'});
+  [].forEach.call(vs,function(v){io.observe(v);});
+})();
+(function(){
+  var t=document.getElementById('revTrack'), d=document.getElementById('revDots');
+  function pages(){return Math.max(1,Math.round(t.scrollWidth/t.clientWidth));}
+  function build(){
+    d.innerHTML='';
+    for(var i=0;i<pages();i++){
+      var s=document.createElement('span');
+      s.dataset.i=i;
+      s.onclick=function(){t.scrollTo({left:t.clientWidth*this.dataset.i,behavior:'smooth'});};
+      d.appendChild(s);
+    }
+    mark();
+  }
+  function mark(){
+    var i=Math.round(t.scrollLeft/t.clientWidth);
+    [].forEach.call(d.children,function(s,n){s.className=(n===i?'on':'');});
+  }
+  window.revScroll=function(dir){t.scrollBy({left:dir*t.clientWidth,behavior:'smooth'});};
+  t.addEventListener('scroll',mark,{passive:true});
+  window.addEventListener('resize',build);
+  build();
+})();
+</script>
+
+<!-- ===== QUIZ CINNA SHIELD ===== -->
+<style id="csq-style">
+.csq-overlay{
+  --cq-brand:#A86B2B; --cq-brand-deep:#5A3C1B; --cq-header:#1B2B4B;
+  --cq-cta:#22A447; --cq-cta-dark:#1D8E3D; --cq-cta-border:#177630;
+  --cq-ink:#2A1F14; --cq-body:#4B4238; --cq-label:#8A7E70;
+  --cq-rule:#E8DFD3; --cq-tint:#FAF1E4; --cq-cream:#FAEDDF; --cq-soft:#FAF3EA; --cq-red:#B3402B;
+  position:fixed;inset:0;z-index:2147483000;display:none;
+  align-items:center;justify-content:center;padding:24px 16px;
+  background:rgba(12,12,14,.72);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  color:var(--cq-body);-webkit-font-smoothing:antialiased;
+}
+.csq-overlay.open{display:flex}
+.csq-overlay *{box-sizing:border-box}
+.csq-overlay button{font-family:inherit}
+
+.csq-modal{
+  position:relative;background:#fff;width:100%;max-width:480px;max-height:92vh;max-height:92dvh;
+  border-radius:4px;overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:0 26px 70px rgba(0,0,0,.45);
+  animation:csqIn .22s cubic-bezier(.2,.7,.3,1) both;
+}
+@keyframes csqIn{from{opacity:0;transform:translateY(14px) scale(.99)}to{opacity:1;transform:none}}
+
+/* ---- brandbar ---- */
+.csq-brandbar{display:flex;align-items:center;gap:10px;background:var(--cq-header);padding:11px 14px;flex:0 0 auto}
+.csq-wordmark{margin-right:auto;display:flex;align-items:baseline;gap:5px;line-height:1}
+.csq-wordmark b{color:#fff;font-size:16px;font-weight:800;letter-spacing:.03em}
+.csq-wordmark span{color:var(--cq-brand);font-size:16px;font-weight:800;letter-spacing:.03em}
+.csq-wordmark sup{color:#8A99B5;font-size:9px;font-weight:600;top:-.6em;position:relative}
+.csq-trust{display:flex;flex-direction:column;align-items:flex-end;gap:3px;line-height:1}
+.csq-stars{display:inline-flex;gap:2px}
+.csq-stars i{width:13px;height:13px;background:#00B67A;display:inline-flex;align-items:center;justify-content:center}
+.csq-stars svg{width:10px;height:10px;fill:#fff;display:block}
+.csq-score{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9AA6BC;white-space:nowrap}
+.csq-close{appearance:none;border:0;background:none;font-size:24px;line-height:1;color:#8A99B5;cursor:pointer;padding:0 2px;margin-left:4px}
+.csq-close:hover{color:#fff}
+
+/* ---- voltar + progresso segmentado ---- */
+.csq-nav{display:flex;align-items:center;gap:10px;padding:13px 16px 2px;flex:0 0 auto}
+.csq-back{appearance:none;border:0;background:none;font-size:17px;line-height:1;color:#B5A99A;cursor:pointer;padding:2px 4px;width:24px;visibility:hidden;transition:color .15s}
+.csq-back:hover{color:var(--cq-ink)}
+.csq-back.on{visibility:visible}
+.csq-steps{display:flex;gap:4px;flex:1}
+.csq-steps i{flex:1;height:5px;background:var(--cq-rule);transition:background .3s ease}
+.csq-steps i.done{background:var(--cq-brand)}
+
+/* ---- corpo rolavel ---- */
+.csq-scroll{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px 16px 6px;flex:1 1 auto}
+.csq-step{animation:csqStep .26s ease both}
+@keyframes csqStep{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:none}}
+
+.csq-kicker{font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--cq-brand);margin:0 0 8px}
+.csq-q{font-size:24px;line-height:1.2;font-weight:800;color:var(--cq-ink);margin:0 0 6px;letter-spacing:-.01em}
+.csq-sub{font-size:13.5px;line-height:1.5;color:var(--cq-label);margin:0 0 2px}
+.csq-hint{font-size:12px;font-weight:600;color:var(--cq-label);margin:10px 0 0}
+
+/* ---- opcoes ---- */
+.csq-opts{display:flex;flex-direction:column;gap:9px;margin:16px 0 4px}
+.csq-opt{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  background:#fff;border:2px solid var(--cq-rule);border-radius:4px;padding:15px 14px;
+  cursor:pointer;font:700 15.5px/1.25 inherit;color:var(--cq-ink);
+  transition:border-color .15s,background .15s,transform .1s;
+}
+.csq-opt:hover{border-color:#DCC49E}
+.csq-opt:active{transform:scale(.995)}
+.csq-opt.sel{border-color:var(--cq-brand);background:var(--cq-tint)}
+.csq-opt .tick{flex:0 0 auto;width:20px;height:20px;border:2px solid #CFC5B6;background:#fff;position:relative;transition:border-color .15s,background .15s}
+.csq-opt.multi .tick{border-radius:3px}
+.csq-opt.sel .tick{border-color:var(--cq-brand);background:var(--cq-brand)}
+.csq-opt.sel .tick::after{content:"";position:absolute;left:5px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.csq-opt .txt{flex:1}
+
+/* ---- loader ---- */
+.csq-load{text-align:center;padding:46px 0 38px}
+.csq-spin{width:36px;height:36px;margin:0 auto 20px;border:3px solid var(--cq-rule);border-top-color:var(--cq-brand);border-radius:50%;animation:csqSpin .8s linear infinite}
+@keyframes csqSpin{to{transform:rotate(360deg)}}
+.csq-load p{margin:0 0 5px;font-size:16.5px;font-weight:800;color:var(--cq-ink)}
+.csq-load small{font-size:12.5px;color:var(--cq-label)}
+
+/* ---- resultado ---- */
+.csq-est{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cq-label);margin:18px 0 5px}
+.csq-est svg{color:var(--cq-brand);flex:0 0 auto}
+.csq-est-h{font-size:20px;font-weight:800;color:var(--cq-ink);margin:0 0 8px;line-height:1.22}
+.csq-est-p{font-size:13.5px;line-height:1.5;color:var(--cq-body);margin:0}
+.csq-est-p b{color:var(--cq-ink)}
+
+/* grafico */
+.csq-chart{border:1px solid var(--cq-rule);background:linear-gradient(180deg,#fff,var(--cq-soft));padding:13px 12px 10px;margin:14px 0 0}
+.csq-chart-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin:0 0 2px}
+.csq-chart-h strong{font-size:12.5px;font-weight:800;color:var(--cq-ink);letter-spacing:.01em}
+.csq-chart-h em{font-style:normal;font-size:11px;font-weight:700;color:var(--cq-cta-dark);background:#EEF7E4;border:1px solid #D6E9C2;padding:2px 6px;white-space:nowrap}
+.csq-chart svg{display:block;width:100%;height:auto;margin-top:4px}
+.csq-chart-f{display:flex;align-items:center;gap:7px;margin:8px 0 0;font-size:10.5px;line-height:1.35;color:var(--cq-label)}
+.csq-chart-f span{display:inline-flex;align-items:center;gap:4px}
+.csq-chart-f b{width:14px;height:0;border-top:2px solid var(--cq-cta);display:inline-block}
+.csq-chart-f u{width:14px;height:0;border-top:2px dashed var(--cq-red);display:inline-block;text-decoration:none}
+
+.csq-shot{background:var(--cq-cream);margin:14px 0 0;display:flex;justify-content:center;overflow:hidden}
+.csq-shot img{width:100%;height:auto;display:block}
+.csq-alloc{background:#FFF6EC;border:1px solid #F3D6B4;padding:11px 12px;margin:14px 0 0}
+.csq-alloc-top{display:flex;align-items:center;gap:7px;font-size:12.5px;line-height:1.35;color:#7C2D12}
+.csq-alloc-top b{color:#9A3412;font-weight:800}
+.csq-alloc-bar{height:7px;background:#F6E3CD;margin-top:9px;overflow:hidden}
+.csq-alloc-bar i{display:block;height:100%;background:linear-gradient(90deg,#E8A33D,#C0521B)}
+.csq-ship{display:flex;align-items:center;gap:9px;background:var(--cq-soft);padding:11px 12px;font-size:13px;line-height:1.45;color:var(--cq-body);margin:10px 0 2px}
+.csq-ship svg{flex:0 0 auto;color:var(--cq-label)}
+.csq-ship b{color:var(--cq-ink)}
+.csq-disc{font-size:10.5px;line-height:1.45;color:#9C9184;margin:12px 0 2px}
+
+/* ---- rodape fixo ---- */
+.csq-foot{padding:13px 16px;flex:0 0 auto;background:#fff;border-top:1px solid var(--cq-rule)}
+.csq-next{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:54px;
+  border:2px solid var(--cq-cta-border);border-radius:8px;cursor:pointer;
+  background:var(--cq-cta);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.28);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 3px 0 var(--cq-cta-border);
+  font:800 17px/1.15 inherit;letter-spacing:.02em;padding:8px 14px;text-align:center;text-transform:uppercase;
+  transition:background .15s,box-shadow .15s,transform .06s;
+}
+.csq-next:hover{background:var(--cq-cta-dark)}
+.csq-next:not([disabled]):active{transform:translateY(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 0 var(--cq-cta-border)}
+.csq-next[disabled]{background:#D9E7C8;border-color:#CBDCB6;color:#8FA07C;cursor:default;text-shadow:none;box-shadow:none}
+.csq-next .arw{transition:transform .15s}
+.csq-next-inline{margin:14px 0 0}
+.csq-next:not([disabled]):hover .arw{transform:translateX(3px)}
+
+@media(max-width:600px){
+  .csq-overlay{padding:16px 12px}
+  .csq-modal{max-width:none;max-height:88vh;max-height:88dvh}
+  .csq-brandbar{padding:10px 12px}
+  .csq-wordmark b,.csq-wordmark span{font-size:14px}
+  .csq-nav{padding:11px 14px 2px}
+  .csq-scroll{padding:12px 14px 6px}
+  .csq-foot{padding:11px 14px}
+  .csq-q{font-size:20px}
+  .csq-opt{padding:13px 12px;font-size:14.5px}
+  .csq-est-h{font-size:18px}
+  .csq-shot img{max-height:none}
+  .csq-next{min-height:50px;font-size:15.5px}
+}
+@media(max-width:600px) and (max-height:660px){
+  .csq-overlay{padding:10px}
+  .csq-modal{max-height:94vh;max-height:94dvh}
+  .csq-load{padding:32px 0 26px}
+}
+@media(prefers-reduced-motion:reduce){
+  .csq-modal,.csq-step,.csq-spin{animation:none}
+  .csq-opt,.csq-steps i,.csq-next .arw{transition:none}
+}
+</style>
+
+<div class="csq-overlay" id="csqOverlay" role="dialog" aria-modal="true" aria-label="Cinna Shield qualification quiz">
+  <div class="csq-modal">
+    <header class="csq-brandbar">
+      <span class="csq-wordmark"><b>CINNA</b><span>SHIELD</span><sup>&reg;</sup></span>
+      <span class="csq-trust">
+        <span class="csq-stars">
+          <i><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg></i>
+          <i><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg></i>
+          <i><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg></i>
+          <i><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg></i>
+          <i><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.8 5.5 21l2-7.5L2 9h7z"/></svg></i>
+        </span>
+        <span class="csq-score">Excellent 4.8</span>
+      </span>
+      <button class="csq-close" id="csqClose" aria-label="Close">&times;</button>
+    </header>
+    <div class="csq-nav"><button class="csq-back" id="csqBack" aria-label="Back">&larr;</button><div class="csq-steps" id="csqSteps"></div></div>
+    <div class="csq-scroll" id="csqScroll"><div id="csqBody"></div></div>
+    <footer class="csq-foot"><button class="csq-next" id="csqNext" disabled>Next <span class="arw" aria-hidden="true">&rarr;</span></button></footer>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* >>> COLOQUE AQUI A URL DO CHECKOUT <<< */
+  var CHECKOUT_URL = 'https://cinnashield.com/cc2/dtc/pay/checkout.php?package=6b19&hid=b2lkPW9mZl8zOTQ3Mzg3JmFpZD1hZmZfMDU5NzY5NCZ1aWQ9YmxfMTUxNDU3OQ%3D%3D&affid=aff_0597694';
+
+  /* Mockup do resultado. Deixe vazio para usar a foto do frasco que ja esta no artigo,
+     ou cole aqui a URL/data-URI do 3CinnaShield.png (pack de 3). */
+  var PRODUCT_IMG   = 'assets/54-product-pack3-mockup.webp';
+  var DELIVERY_DAYS = 3;
+  var ALLOCATION    = {units:500, reserved:87};
+
+  /* ------------------------------------------------------------ conteudo */
+  var INTRO='These 6 quick questions reveal whether your pattern matches the one real Ceylon was shown to work on — and unlock your discount.';
+
+  var SCREENS=[
+    {phase:0,kicker:'Question 1 of 6',
+     q:'What is your age range?',
+     sub:INTRO,
+     o:[{t:'Under 45'},{t:'45–54'},{t:'55–64'},{t:'65–74'},{t:'75+'}]},
+
+    {phase:1,kicker:'Question 2 of 6',
+     q:'Select your primary goal:',
+     o:[{t:'Get my blood sugar back into normal range'},
+        {t:'Stop the spikes after I eat'},
+        {t:'Stop the sugar cravings'},
+        {t:'Get my energy back'},
+        {t:'Stop relying on prescriptions'}]},
+
+    {phase:2,kicker:'Question 3 of 6',key:'fasting',
+     q:'Where does your fasting reading usually land in the morning?',
+     o:[{t:'Under 100 mg/dL',v:96},
+        {t:'100–125 mg/dL',v:117},
+        {t:'126–160 mg/dL',v:145},
+        {t:'Over 160 mg/dL',v:178},
+        {t:'I don’t test regularly',v:138}]},
+
+    {phase:3,kicker:'Question 4 of 6',multi:true,
+     q:'Which of these do you currently experience?',
+     sub:'Select all that apply.',
+     o:[{t:'High readings in the morning, no matter what I ate'},
+        {t:'My number spikes after almost every meal'},
+        {t:'I crash in the afternoon and can barely stay awake'},
+        {t:'Sugar cravings I can’t control'},
+        {t:'Brain fog and trouble concentrating'},
+        {t:'Constant thirst or frequent bathroom trips'},
+        {t:'Tingling or numbness in my hands or feet'},
+        {t:'None of the above',x:true}]},
+
+    {phase:4,kicker:'Question 5 of 6',
+     q:'How long has this been happening?',
+     o:[{t:'Less than 6 months'},
+        {t:'6 months to 2 years'},
+        {t:'2 to 5 years'},
+        {t:'More than 5 years'}]},
+
+    {phase:5,kicker:'Question 6 of 6',multi:true,last:true,
+     q:'What have you already tried?',
+     sub:'Select all that apply.',
+     o:[{t:'Metformin (or Glucophage)'},
+        {t:'Ozempic or Wegovy (semaglutide)'},
+        {t:'Mounjaro or Zepbound (tirzepatide)'},
+        {t:'Trulicity (dulaglutide)'},
+        {t:'Insulin'},
+        {t:'Low-carb or keto diet'},
+        {t:'A medication or supplement not listed here'},
+        {t:'None of the above',x:true}]}
+  ];
+
+  var PHASES=7, LOADER_PHASE=6;
+  var LOADERS=[
+    ['Reviewing your answers…','Matching your profile against 11,400+ readers'],
+    ['Checking your insulin resistance pattern…','DNA-verified Ceylon · 12:1 concentrated extract'],
+    ['Unlocking your discount…','Reserving your allocation for the next few minutes']
+  ];
+
+  /* -------------------------------------------------------------- estado */
+  var ov      = document.getElementById('csqOverlay'),
+      body    = document.getElementById('csqBody'),
+      steps   = document.getElementById('csqSteps'),
+      backBtn = document.getElementById('csqBack'),
+      nextBtn = document.getElementById('csqNext'),
+      foot    = document.querySelector('.csq-foot'),
+      scroll  = document.getElementById('csqScroll'),
+      answers = [], step = 0, DONE = SCREENS.length;
+
+  /* ------------------------------------------------------------- helpers */
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+
+  function setPhase(){
+    var ph = step >= DONE ? LOADER_PHASE : SCREENS[step].phase;
+    var kids = steps.children;
+    for (var i=0;i<kids.length;i++) kids[i].className = (i<=ph) ? 'done' : '';
+  }
+  function setNext(label,enabled,handler){
+    nextBtn.innerHTML = label + ' <span class="arw" aria-hidden="true">&rarr;</span>';
+    nextBtn.disabled = !enabled;
+    nextBtn.onclick = handler;
+  }
+  function paint(html){
+    body.innerHTML = '<div class="csq-step">'+html+'</div>';
+    if (scroll) scroll.scrollTop = 0;
+    if (foot) foot.style.display = '';
+    backBtn.classList.toggle('on', step>0 && step<DONE);
+    setPhase();
+  }
+  function withParams(u){
+    try{
+      var qs = location.search.replace(/^\?/,'');
+      if(!qs || u==='#') return u;
+      return u + (u.indexOf('?')>-1?'&':'?') + qs;
+    }catch(e){return u;}
+  }
+  function fmt(d,weekday){
+    var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var W=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    return (weekday ? W[d.getDay()]+', ' : '') + M[d.getMonth()]+' '+d.getDate();
+  }
+  function shortDate(d){
+    var M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return M[d.getMonth()]+' '+d.getDate();
+  }
+  function plusDays(n,skipSunday){
+    var d=new Date(); d.setDate(d.getDate()+n);
+    if(skipSunday && d.getDay()===0) d.setDate(d.getDate()+1);
+    return d;
+  }
+
+  /* ---------------------------------------------------------- navegacao */
+  function go(n){step=n;render();}
+  function back(){if(step>0&&step<DONE)go(step-1);}
+  function advance(){ if(step+1<DONE) go(step+1); else renderLoader(); }
+
+  /* ----------------------------------------------------------- perguntas */
+  function renderQuestion(S){
+    var multi=!!S.multi, html='';
+    if(S.kicker) html+='<p class="csq-kicker">'+esc(S.kicker)+'</p>';
+    html+='<h2 class="csq-q">'+esc(S.q)+'</h2>';
+    if(S.sub) html+='<p class="csq-sub">'+esc(S.sub)+'</p>';
+
+    var chosen=answers[step];
+    if(multi && !Array.isArray(chosen)) chosen=[];
+    function on(i){ return multi ? chosen.indexOf(i)>-1 : chosen===i; }
+
+    html+='<div class="csq-opts">';
+    S.o.forEach(function(o,i){
+      html+='<button type="button" class="csq-opt'+(multi?' multi':'')+(on(i)?' sel':'')+'"'
+          + (S.last&&i===0?' id="ViewContent"':'')+' data-i="'+i+'" aria-pressed="'+(on(i)?'true':'false')+'">'
+          + '<span class="tick"></span><span class="txt">'+esc(o.t)+'</span></button>';
+    });
+    html+='</div>';
+    paint(html);
+
+    var btns=body.querySelectorAll('.csq-opt');
+    function sync(){
+      Array.prototype.forEach.call(btns,function(b,i){
+        b.classList.toggle('sel',on(i));
+        b.setAttribute('aria-pressed',on(i)?'true':'false');
+      });
+      nextBtn.disabled = multi ? chosen.length===0 : chosen==null;
+    }
+
+    Array.prototype.forEach.call(btns,function(b){
+      b.addEventListener('click',function(){
+        var i=+b.getAttribute('data-i');
+        if(multi){
+          if(S.o[i].x){                       /* "None of the above" e exclusivo */
+            chosen = on(i) ? [] : [i];
+          }else{
+            chosen = chosen.filter(function(k){return !S.o[k].x;});
+            var p=chosen.indexOf(i);
+            if(p>-1) chosen.splice(p,1); else chosen.push(i);
+          }
+          answers[step]=chosen;
+          sync();
+        }else{
+          answers[step]=chosen=i;
+          sync();
+          setTimeout(advance,260);
+        }
+      });
+    });
+    setNext('Next', multi ? chosen.length>0 : chosen!=null, advance);
+  }
+
+  /* -------------------------------------------------------------- loader */
+  function renderLoader(i){
+    i=i||0; step=DONE;
+    backBtn.classList.remove('on');
+    paint('<div class="csq-load"><div class="csq-spin"></div><p>'+LOADERS[i][0]+'</p><small>'+LOADERS[i][1]+'</small></div>');
+    setNext('Next',false,null);
+    var wait = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 300 : 1250;
+    setTimeout(function(){ i+1<LOADERS.length ? renderLoader(i+1) : renderResult(); },wait);
+  }
+
+  /* --------------------------------- grafico: proximas 8 semanas (dinamico) */
+  function baseline(){
+    for(var i=0;i<SCREENS.length;i++){
+      if(SCREENS[i].key==='fasting'){
+        var a=answers[i];
+        if(a!=null && SCREENS[i].o[a]) return SCREENS[i].o[a].v;
+      }
+    }
+    return 138;
+  }
+  function projection(){
+    var start=baseline(), floor=Math.max(88, Math.round(start*0.63)), pts=[];
+    for(var w=0;w<=8;w+=2){
+      var t=w/8, ease=1-Math.pow(1-t,1.7);
+      pts.push({w:w, v:Math.round(start-(start-floor)*ease), d:plusDays(w*7,false)});
+    }
+    return pts;
+  }
+  function chartSVG(){
+    var pts=projection(), W=460, H=210, L=42, R=14, T=16, B=34;
+    var vals=pts.map(function(p){return p.v;});
+    var hi=Math.max.apply(null,vals), lo=Math.min.apply(null,vals);
+    var top=Math.ceil((hi+12)/10)*10, bot=Math.floor((Math.min(lo,95)-10)/10)*10;
+    function x(i){ return L + (W-L-R) * (i/(pts.length-1)); }
+    function y(v){ return T + (H-T-B) * (1-(v-bot)/(top-bot)); }
+
+    var line='', area='', dots='', xlab='', ylab='';
+    pts.forEach(function(p,i){
+      line += (i?' L ':'M ')+x(i).toFixed(1)+' '+y(p.v).toFixed(1);
+      dots += '<circle cx="'+x(i).toFixed(1)+'" cy="'+y(p.v).toFixed(1)+'" r="'+(i===pts.length-1?4.6:3.4)+'" fill="#fff" stroke="#22A447" stroke-width="2.4"/>';
+      xlab += '<text x="'+x(i).toFixed(1)+'" y="'+(H-14)+'" text-anchor="middle" font-size="9.5" font-weight="600" fill="#8A7E70">'+shortDate(p.d)+'</text>'
+            + '<text x="'+x(i).toFixed(1)+'" y="'+(H-3)+'" text-anchor="middle" font-size="8.5" font-weight="700" fill="#B5A99A" letter-spacing=".06em">'+(p.w===0?'TODAY':'WK '+p.w)+'</text>';
+    });
+    area = line+' L '+x(pts.length-1).toFixed(1)+' '+(H-B)+' L '+x(0).toFixed(1)+' '+(H-B)+' Z';
+
+    var grid='';
+    for(var v=bot; v<=top; v+=Math.max(10,Math.round((top-bot)/4/10)*10)){
+      grid += '<line x1="'+L+'" y1="'+y(v).toFixed(1)+'" x2="'+(W-R)+'" y2="'+y(v).toFixed(1)+'" stroke="#EFE7DC" stroke-width="1"/>';
+      ylab += '<text x="'+(L-8)+'" y="'+(y(v)+3.4).toFixed(1)+'" text-anchor="end" font-size="9.5" font-weight="600" fill="#B5A99A">'+v+'</text>';
+    }
+
+    var normY=y(99);
+    var uid='csqg'+Math.random().toString(36).slice(2,7);
+
+    return '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Projected fasting glucose over the next 8 weeks">'
+      + '<defs><linearGradient id="'+uid+'" x1="0" y1="0" x2="0" y2="1">'
+      + '<stop offset="0%" stop-color="#22A447" stop-opacity=".26"/><stop offset="100%" stop-color="#22A447" stop-opacity="0"/>'
+      + '</linearGradient></defs>'
+      + grid
+      + '<rect x="'+L+'" y="'+normY.toFixed(1)+'" width="'+(W-L-R)+'" height="'+Math.max(0,(H-B-normY)).toFixed(1)+'" fill="#22A447" opacity=".06"/>'
+      + '<line x1="'+L+'" y1="'+normY.toFixed(1)+'" x2="'+(W-R)+'" y2="'+normY.toFixed(1)+'" stroke="#B3402B" stroke-width="1.5" stroke-dasharray="5 4" opacity=".75"/>'
+      + '<text x="'+(W-R)+'" y="'+(normY-6).toFixed(1)+'" text-anchor="end" font-size="9" font-weight="800" fill="#B3402B" letter-spacing=".05em">NORMAL RANGE</text>'
+      + '<path d="'+area+'" fill="url(#'+uid+')"/>'
+      + '<path d="'+line+'" fill="none" stroke="#22A447" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+      + dots + ylab + xlab
+      + '<text x="'+L+'" y="'+(T-4)+'" font-size="9" font-weight="700" fill="#B5A99A" letter-spacing=".08em">mg/dL</text>'
+      + '</svg>';
+  }
+  function productImg(){
+    if(PRODUCT_IMG) return PRODUCT_IMG;
+    var el=document.querySelector('img[alt="Cinna Shield bottle"]');
+    return el ? el.getAttribute('src') : '';
+  }
+
+  /* ------------------------------------------------------------ resultado */
+  function renderResult(){
+    step=DONE+1;
+    try{ if(window.fbq) fbq('track','Lead'); }catch(e){}
+    var pts=projection(), start=pts[0].v, end=pts[pts.length-1].v, drop=start-end;
+    var ship=plusDays(DELIVERY_DAYS,true), img=productImg();
+    var art = /^(8|11|18|8\d)$/.test(String(drop)) ? 'an' : 'a';  /* an 8-point / an 11-point */
+
+    paint(
+      '<h2 class="csq-q">You’re a strong match for Cinna Shield®!</h2>'
+      + '<p class="csq-est">'
+        + '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l6 6 4-4 7 7"/><path d="M20 16v4h-4"/></svg>'
+        + 'Your estimated results</p>'
+      + '<h3 class="csq-est-h">Your 8-Week Glucose Projection</h3>'
+      + '<p class="csq-est-p">Based on your answers, readers with a similar profile reported fasting glucose moving from <b>'+start+'</b> to <b>'+end+' mg/dL</b> — '+art+' <b>'+drop+'-point</b> drop in 8 weeks.</p>'
+      + (img ? '<div class="csq-shot"><img src="'+img+'" alt="Cinna Shield® — Ceylon cinnamon extract" decoding="async"></div>' : '')
+      + '<button type="button" class="csq-next csq-next-inline" id="csqBuy">Unlock My Discount Now <span class="arw" aria-hidden="true">&rarr;</span></button>'
+
+      + '<div class="csq-chart">'
+        + '<div class="csq-chart-h"><strong>Projected fasting glucose</strong><em>−'+drop+' mg/dL in 8 weeks</em></div>'
+        + chartSVG()
+        + '<div class="csq-chart-f"><span><b></b> Your projection</span><span><u></u> Normal range (under 100)</span></div>'
+      + '</div>'
+
+
+      + '<div class="csq-alloc"><div class="csq-alloc-top">'
+        + '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 9v5M12 17.5v.01"/><path d="M10.3 3.9 2.4 17.4A2 2 0 0 0 4.1 20.4h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>'
+        + '<span><b>'+ALLOCATION.reserved+'%</b> of this batch of '+ALLOCATION.units+' bottles already reserved</span>'
+        + '</div><div class="csq-alloc-bar"><i style="width:'+ALLOCATION.reserved+'%"></i></div></div>'
+
+      + '<p class="csq-ship">'
+        + '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>'
+        + '<span>Order now and it arrives by <b>'+fmt(ship,true)+'</b> — backed by the 90-day guarantee</span></p>'
+
+      + '<p class="csq-disc">Projection is an illustration based on your answers and reported reader averages, not a medical prediction. Individual results vary. This product is not intended to diagnose, treat, cure or prevent any disease.</p>'
+    );
+    backBtn.classList.remove('on');
+    var buy = document.getElementById('csqBuy');
+    if (buy) buy.onclick = function(){ goCheckout(CHECKOUT_URL); };
+    if (foot) foot.style.display = 'none';   /* o CTA agora vive embaixo da imagem */
+    setNext('Unlock My Discount Now',true,function(){goCheckout(CHECKOUT_URL);});
+  }
+
+  /* ------------------------------------------------------------- checkout */
+  function goCheckout(url){
+    try{ if(window.fbq) fbq('track','InitiateCheckout'); }catch(e){}
+    try{ if(window.utmify && window.utmify.track) window.utmify.track('InitiateCheckout'); }catch(e){}
+    window.location.href=withParams(url);
+  }
+
+  /* -------------------------------------------------------------- router */
+  function render(){
+    var S=SCREENS[step];
+    if(!S) return renderLoader();
+    renderQuestion(S);
+  }
+
+  /* -------------------------------------------------------- abrir/fechar */
+  function openQuiz(){
+    answers=[]; step=0;
+    steps.innerHTML=new Array(PHASES+1).join('<i></i>');
+    ov.classList.add('open');
+    document.body.style.overflow='hidden';
+    render();
+    try{ if(window.fbq) fbq('trackCustom','QuizStart'); }catch(e){}
+  }
+  function closeQuiz(){
+    ov.classList.remove('open');
+    document.body.style.overflow='';
+  }
+
+  /* abre o quiz ao clicar em QUALQUER botao/CTA do artigo */
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('a.cta, .cta, .quiz-open, a[href*="checkout"], a[href*="final-cta"], a.product-card-cta'):null;
+    if(a && !a.closest('.csq-overlay')){
+      e.preventDefault();e.stopPropagation();openQuiz();
+    }
+  },true);
+  document.getElementById('csqClose').onclick=closeQuiz;
+  backBtn.addEventListener('click',back);
+  ov.addEventListener('click',function(e){if(e.target===ov)closeQuiz();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open'))closeQuiz();});
+})();
+</script>
+
+</body>
+</html>
