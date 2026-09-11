@@ -381,7 +381,23 @@ footer p{font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 12px;text-
 footer .links{font-size:13px;color:var(--muted)}
 footer .links a{margin-right:14px;text-decoration:underline}
 </style>
-<script defer src="https://cdn.raads-hub.com/tag.js" data-tag-id="12232-49f0d97022c54735baf939f9ac0c6185" data-event-host="api.raads-hub.com" data-plat-params="utm_source,utm_medium,utm_term,utm_content,utm_campaign"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2082048802389372');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2082048802389372&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCPE4E0C7"></script>
 <script>
@@ -1320,6 +1336,7 @@ footer .links a{margin-right:14px;text-decoration:underline}
   box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 3px 0 var(--cq-cta-border);
   font:800 17px/1.15 inherit;letter-spacing:.02em;padding:8px 14px;text-align:center;text-transform:uppercase;
   transition:background .15s,box-shadow .15s,transform .06s;
+  text-decoration:none;box-sizing:border-box;
 }
 .csq-next:hover{background:var(--cq-cta-dark)}
 .csq-next:not([disabled]):active{transform:translateY(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 0 var(--cq-cta-border)}
@@ -1642,6 +1659,7 @@ footer .links a{margin-right:14px;text-decoration:underline}
     var pts=projection(), start=pts[0].v, end=pts[pts.length-1].v, drop=start-end;
     var ship=plusDays(DELIVERY_DAYS,true), img=productImg();
     var art = /^(8|11|18|8\d)$/.test(String(drop)) ? 'an' : 'a';  /* an 8-point / an 11-point */
+    var checkoutHref = withParams(CHECKOUT_URL);
 
     paint(
       '<h2 class="csq-q">You’re a strong match for Cinna Shield®!</h2>'
@@ -1651,7 +1669,7 @@ footer .links a{margin-right:14px;text-decoration:underline}
       + '<h3 class="csq-est-h">Your 8-Week Glucose Projection</h3>'
       + '<p class="csq-est-p">Based on your answers, readers with a similar profile reported fasting glucose moving from <b>'+start+'</b> to <b>'+end+' mg/dL</b> — '+art+' <b>'+drop+'-point</b> drop in 8 weeks.</p>'
       + (img ? '<div class="csq-shot"><img src="'+img+'" alt="Cinna Shield® — Ceylon cinnamon extract" decoding="async"></div>' : '')
-      + '<button type="button" class="csq-next csq-next-inline" id="csqBuy">Unlock My Discount Now <span class="arw" aria-hidden="true">&rarr;</span></button>'
+      + '<a href="'+esc(checkoutHref)+'" class="csq-next csq-next-inline" id="csqBuy">Unlock My Discount Now <span class="arw" aria-hidden="true">&rarr;</span></a>'
 
       + '<div class="csq-chart">'
         + '<div class="csq-chart-h"><strong>Projected fasting glucose</strong><em>−'+drop+' mg/dL in 8 weeks</em></div>'
@@ -1673,15 +1691,18 @@ footer .links a{margin-right:14px;text-decoration:underline}
     );
     backBtn.classList.remove('on');
     var buy = document.getElementById('csqBuy');
-    if (buy) buy.onclick = function(){ goCheckout(CHECKOUT_URL); };
+    if (buy) buy.addEventListener('click', trackCheckout);
     if (foot) foot.style.display = 'none';   /* o CTA agora vive embaixo da imagem */
     setNext('Unlock My Discount Now',true,function(){goCheckout(CHECKOUT_URL);});
   }
 
   /* ------------------------------------------------------------- checkout */
-  function goCheckout(url){
+  function trackCheckout(){
     try{ if(window.fbq) fbq('track','InitiateCheckout'); }catch(e){}
     try{ if(window.utmify && window.utmify.track) window.utmify.track('InitiateCheckout'); }catch(e){}
+  }
+  function goCheckout(url){
+    trackCheckout();
     window.location.href=withParams(url);
   }
 
