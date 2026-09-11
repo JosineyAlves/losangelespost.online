@@ -1692,16 +1692,11 @@ src="https://www.facebook.com/tr?id=2082048802389372&ev=PageView&noscript=1"
     var buy = document.getElementById('csqBuy');
     if (buy){ buy.href = withParams(CHECKOUT_URL); buy.addEventListener('click', trackCheckout); }
     if (foot) foot.style.display = 'none';   /* o CTA agora vive embaixo da imagem */
-    setNext('Unlock My Discount Now',true,function(){goCheckout(CHECKOUT_URL);});
   }
 
   /* ------------------------------------------------------------- checkout */
   function trackCheckout(){
     try{ if(window.fbq) fbq('track','InitiateCheckout'); }catch(e){}
-  }
-  function goCheckout(url){
-    trackCheckout();
-    window.location.href=withParams(url);
   }
 
   /* -------------------------------------------------------------- router */
