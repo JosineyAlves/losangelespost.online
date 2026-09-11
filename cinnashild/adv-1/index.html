@@ -1659,7 +1659,6 @@ src="https://www.facebook.com/tr?id=2082048802389372&ev=PageView&noscript=1"
     var pts=projection(), start=pts[0].v, end=pts[pts.length-1].v, drop=start-end;
     var ship=plusDays(DELIVERY_DAYS,true), img=productImg();
     var art = /^(8|11|18|8\d)$/.test(String(drop)) ? 'an' : 'a';  /* an 8-point / an 11-point */
-    var checkoutHref = withParams(CHECKOUT_URL);
 
     paint(
       '<h2 class="csq-q">You’re a strong match for Cinna Shield®!</h2>'
@@ -1669,7 +1668,7 @@ src="https://www.facebook.com/tr?id=2082048802389372&ev=PageView&noscript=1"
       + '<h3 class="csq-est-h">Your 8-Week Glucose Projection</h3>'
       + '<p class="csq-est-p">Based on your answers, readers with a similar profile reported fasting glucose moving from <b>'+start+'</b> to <b>'+end+' mg/dL</b> — '+art+' <b>'+drop+'-point</b> drop in 8 weeks.</p>'
       + (img ? '<div class="csq-shot"><img src="'+img+'" alt="Cinna Shield® — Ceylon cinnamon extract" decoding="async"></div>' : '')
-      + '<a href="'+esc(checkoutHref)+'" class="csq-next csq-next-inline" id="csqBuy">Unlock My Discount Now <span class="arw" aria-hidden="true">&rarr;</span></a>'
+      + '<a class="csq-next csq-next-inline" id="csqBuy">Unlock My Discount Now <span class="arw" aria-hidden="true">&rarr;</span></a>'
 
       + '<div class="csq-chart">'
         + '<div class="csq-chart-h"><strong>Projected fasting glucose</strong><em>−'+drop+' mg/dL in 8 weeks</em></div>'
@@ -1691,7 +1690,7 @@ src="https://www.facebook.com/tr?id=2082048802389372&ev=PageView&noscript=1"
     );
     backBtn.classList.remove('on');
     var buy = document.getElementById('csqBuy');
-    if (buy) buy.addEventListener('click', trackCheckout);
+    if (buy){ buy.href = withParams(CHECKOUT_URL); buy.addEventListener('click', trackCheckout); }
     if (foot) foot.style.display = 'none';   /* o CTA agora vive embaixo da imagem */
     setNext('Unlock My Discount Now',true,function(){goCheckout(CHECKOUT_URL);});
   }
@@ -1699,7 +1698,6 @@ src="https://www.facebook.com/tr?id=2082048802389372&ev=PageView&noscript=1"
   /* ------------------------------------------------------------- checkout */
   function trackCheckout(){
     try{ if(window.fbq) fbq('track','InitiateCheckout'); }catch(e){}
-    try{ if(window.utmify && window.utmify.track) window.utmify.track('InitiateCheckout'); }catch(e){}
   }
   function goCheckout(url){
     trackCheckout();
