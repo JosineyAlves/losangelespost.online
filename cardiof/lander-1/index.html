@@ -114,17 +114,6 @@ footer .f-legal{border-top:1px solid #2a2a2a;padding-top:20px}
 footer .f-legal p{font-size:12px;line-height:1.7;color:#9a9a9a;margin:0 0 10px}
 footer .f-copy{font-size:12px;color:#777;margin:14px 0 0}
 @media(max-width:640px){footer .f-logo img{height:28px}footer .f-nav{gap:6px 16px}footer .f-nav a{font-size:13px}}
-
-
-/* ---------- CONTADOR ---------- */
-.stock{display:flex;align-items:center;justify-content:center;gap:8px;margin:14px 0 0;color:var(--brand);font-size:22px;font-weight:700;text-align:center}
-.stock strong{display:inline-block;min-width:1.5em;color:var(--ink);font-size:1.15em;font-weight:800;font-variant-numeric:tabular-nums;text-align:center}
-.stock strong.is-dropping{animation:stockDrop .34s ease-out}
-.stock__dot{flex:none;width:11px;height:11px;border-radius:50%;background:var(--brand);animation:stockDot 1.6s ease-out infinite}
-@keyframes stockDot{0%{box-shadow:0 0 0 0 rgba(205,1,3,.6)}70%{box-shadow:0 0 0 10px rgba(205,1,3,0)}100%{box-shadow:0 0 0 0 rgba(205,1,3,0)}}
-@keyframes stockDrop{0%{transform:translateY(-3px);color:var(--brand)}100%{transform:translateY(0);color:var(--ink)}}
-@media(max-width:640px){.stock{font-size:18px}}
-@media(prefers-reduced-motion:reduce){.stock__dot,.stock strong.is-dropping{animation:none}}
 </style>
 <script defer src="https://cdn.raads-hub.com/tag.js" data-tag-id="12232-49f0d97022c54735baf939f9ac0c6185" data-event-host="api.raads-hub.com" data-plat-params="utm_content,utm_source,utm_medium,utm_term"></script>
 <!-- Google tag (gtag.js) -->
@@ -166,7 +155,6 @@ footer .f-copy{font-size:12px;color:#777;margin:14px 0 0}
 
       <!-- CTA -->
       <a class="cta smartplayer-scroll-event esconder" href="https://cardioflush.com/cc2/pay/checkout.php?package=dtc6b19&hid=b2lkPW9mZl82NTA0NzEzJmFpZD1hZmZfMDU5NzY5NCZ1aWQ9YmxfMzc5NTk3OA%3D%3D&affid=aff_0597694" onclick="return false">GET 3 FREE BOTTLES NOW!</a>
-      <p class="stock esconder"><span class="stock__dot" aria-hidden="true"></span>Only <strong data-offers-left aria-live="polite">88</strong> spots left!</p>
     </div>
   </article>
 </div>
@@ -218,52 +206,6 @@ footer .f-copy{font-size:12px;color:#777;margin:14px 0 0}
         if (w > 0) bar.style.maxWidth = Math.round(w) + "px";
       }).observe(player);
     }
-  })();
-</script>
-<script>
-  /* Contador ficticio (estudo): comeca em 88, cai rapido e desacelera perto do minimo (6). */
-  (function () {
-    var el = document.querySelector("[data-offers-left]");
-    if (!el) return;
-    var START = 88, FLOOR = 6, STALL_FROM = 16, key = "lap_study_offers_left";
-    var left = START;
-    try { var v = parseInt(sessionStorage.getItem(key), 10); if (v >= FLOOR && v <= START) left = v; } catch (e) {}
-    el.textContent = left;
-    var delay = function () {
-      var b = left > 30 ? 2500 : left > STALL_FROM ? 4500 : 18000 + (STALL_FROM - left) * 9000;
-      return b + Math.random() * b * 0.8;
-    };
-    var tick = function () {
-      if (left <= FLOOR) return;
-      left = Math.max(FLOOR, left - (left > 45 && Math.random() < 0.2 ? 2 : 1));
-      try { sessionStorage.setItem(key, left); } catch (e) {}
-      el.textContent = left;
-      el.classList.remove("is-dropping"); void el.offsetWidth; el.classList.add("is-dropping");
-      setTimeout(tick, delay());
-    };
-    /* So inicia quando o .esconder do stock for liberado pelo vturb e estiver exibido */
-    var box = el.closest(".esconder") || el, started = false, mo = null, poll = null;
-    var isShown = function () {
-      return box.getClientRects().length > 0 && getComputedStyle(box).display !== "none";
-    };
-    var start = function () {
-      if (started || !isShown()) return;
-      started = true;
-      if (mo) mo.disconnect();
-      clearInterval(poll);
-      setTimeout(tick, delay());
-    };
-    /* Espera o HTML/CSS inteiro carregar (o CSS do .esconder vem depois deste script) */
-    var watch = function () {
-      if (window.MutationObserver) {
-        mo = new MutationObserver(start);
-        mo.observe(box, { attributes: true, attributeFilter: ["style", "class"] });
-      }
-      poll = setInterval(start, 500);
-      start();
-    };
-    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", watch);
-    else watch();
   })();
 </script>
 <style>
