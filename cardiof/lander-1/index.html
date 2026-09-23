@@ -99,6 +99,9 @@ h1{
 .cta:hover{background:var(--lime-hover)}
 .cta:active{transform:translateY(2px)}
 @media(max-width:640px){.cta{font-size:18px;padding:17px 14px}}
+.cta{animation:ctaPulse 1.6s ease-in-out infinite}
+.cta:hover{animation-play-state:paused}
+@keyframes ctaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
 
 /* ---------- FOOTER ---------- */
 footer{background:#111;border-top:4px solid var(--brand);color:#bdbdbd;padding:36px 0 30px;text-align:center}
@@ -250,16 +253,21 @@ footer .f-copy{font-size:12px;color:#777;margin:14px 0 0}
       clearInterval(poll);
       setTimeout(tick, delay());
     };
-    if (window.MutationObserver) {
-      mo = new MutationObserver(start);
-      mo.observe(box, { attributes: true, attributeFilter: ["style", "class"] });
-    }
-    poll = setInterval(start, 500);
-    start();
+    /* Espera o HTML/CSS inteiro carregar (o CSS do .esconder vem depois deste script) */
+    var watch = function () {
+      if (window.MutationObserver) {
+        mo = new MutationObserver(start);
+        mo.observe(box, { attributes: true, attributeFilter: ["style", "class"] });
+      }
+      poll = setInterval(start, 500);
+      start();
+    };
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", watch);
+    else watch();
   })();
 </script>
 <style>
-  .esconder {
+  .esconde {
     display: none;
   }
 </style>
