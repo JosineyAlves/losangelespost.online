@@ -123,7 +123,7 @@ footer .f-copy{font-size:12px;color:#777;margin:14px 0 0}
   <script>
 (function(){
 var H="order.wealthpay.io",K="vm_utms",q=new URLSearchParams(location.search),p={},s;
-["utm_source","utm_medium","utm_campaign","utm_content","utm_term","utm_id","fbclid"].forEach(function(k){var v=q.get(k);if(v)p[k]=v});
+["utm_source","utm_medium","utm_campaign","utm_content","utm_term","utm_id","fbclid"].forEach(function(k){var v=q.get(k);if(v)p[k]=v.trim().replace(/\s+-\s+/g,"_").replace(/\s+/g,"_")});
 try{if(Object.keys(p).length)localStorage.setItem(K,JSON.stringify({d:p,e:Date.now()+6048e5}));else if((s=JSON.parse(localStorage.getItem(K)))&&s.e>Date.now())p=s.d}catch(e){}
 if(!Object.keys(p).length)return;
 function f(h){try{var u=new URL(h,location.href),x=[];if(u.hostname!==H)return h;for(var k in p)if(!u.searchParams.has(k))x.push(k+"="+encodeURIComponent(p[k]));if(x.length)u.search=(u.search?u.search+"&":"?")+x.join("&");return u.href}catch(e){return h}}
