@@ -119,6 +119,21 @@ footer .f-legal p{font-size:12px;line-height:1.7;color:#9a9a9a;margin:0 0 10px}
 footer .f-copy{font-size:12px;color:#777;margin:14px 0 0}
 @media(max-width:640px){footer .f-logo img{height:28px}footer .f-nav{gap:6px 16px}footer .f-nav a{font-size:13px}}
 </style>
+  <!-- Utm script -->
+  <script>
+(function(){
+var H="order.wealthpay.io",K="vm_utms",q=new URLSearchParams(location.search),p={},s;
+["utm_source","utm_medium","utm_campaign","utm_content","utm_term","utm_id","fbclid"].forEach(function(k){var v=q.get(k);if(v)p[k]=v});
+try{if(Object.keys(p).length)localStorage.setItem(K,JSON.stringify({d:p,e:Date.now()+6048e5}));else if((s=JSON.parse(localStorage.getItem(K)))&&s.e>Date.now())p=s.d}catch(e){}
+if(!Object.keys(p).length)return;
+function f(h){try{var u=new URL(h,location.href);if(u.hostname!==H)return h;for(var k in p)if(!u.searchParams.has(k))u.searchParams.set(k,p[k]);return u.href}catch(e){return h}}
+function a(el){if(el.tagName==="A"&&el.href){var n=f(el.href);if(n!==el.href)el.href=n}}
+document.addEventListener("click",function(e){(e.composedPath?e.composedPath():[e.target]).forEach(function(n){n.tagName&&a(n)})},true);
+var o=window.open;window.open=function(u){arguments[0]=u&&f(String(u));return o.apply(window,arguments)};
+function all(){document.querySelectorAll("a[href]").forEach(a)}
+document.readyState==="loading"?document.addEventListener("DOMContentLoaded",all):all();
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSCPE4E0C7"></script>
 <script>
