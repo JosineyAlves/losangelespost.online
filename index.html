@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>10 Simple Habits to Improve Your Well-Being</title>
+
+  <meta
+    name="description"
+    content="Discover 10 simple, practical habits that can help support your physical, mental, and emotional well-being every day."
+  >
+
+  <style>
+    :root {
+      --primary: #176b55;
+      --primary-dark: #0d4f3e;
+      --primary-soft: #eaf5f1;
+      --accent: #dff0e8;
+      --background: #f7f8f5;
+      --surface: #ffffff;
+      --text: #1c2824;
+      --text-soft: #65716c;
+      --border: #e5eae7;
+      --shadow: 0 18px 55px rgba(24, 56, 46, 0.08);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(229, 234, 231, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: var(--primary);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--text-soft);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 88px 0 74px;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(82, 164, 132, 0.13), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(162, 205, 187, 0.18), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #f4f8f5 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-content {
+      max-width: 830px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.04;
+      letter-spacing: -3px;
+      margin-bottom: 26px;
+      font-weight: 850;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 690px;
+      margin: 0 auto;
+      font-size: 19px;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    .hero-meta {
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      color: var(--text-soft);
+      font-size: 14px;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    /* INTRO */
+
+    main {
+      padding: 74px 0 100px;
+    }
+
+    .intro {
+      max-width: 780px;
+      margin: 0 auto 65px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+
+    .intro p {
+      color: var(--text-soft);
+      font-size: 17px;
+    }
+
+    /* HABITS */
+
+    .habits {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 24px;
+    }
+
+    .habit {
+      position: relative;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 28px;
+      box-shadow: 0 4px 20px rgba(30, 55, 47, 0.025);
+      transition: transform 0.25s ease, box-shadow 0.25s ease,
+        border-color 0.25s ease;
+      overflow: hidden;
+    }
+
+    .habit::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -70px;
+      width: 150px;
+      height: 150px;
+      background: var(--primary-soft);
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .habit:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: #d2e4dc;
+    }
+
+    .habit:hover::after {
+      opacity: 0.8;
+    }
+
+    .habit-number {
+      width: 68px;
+      height: 68px;
+      border-radius: 19px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      font-weight: 850;
+      position: relative;
+      z-index: 2;
+    }
+
+    .habit-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .habit h3 {
+      font-size: 25px;
+      line-height: 1.25;
+      letter-spacing: -0.6px;
+      margin-bottom: 12px;
+    }
+
+    .habit p {
+      color: var(--text-soft);
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    .simple-action {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 14px 17px;
+      border-radius: 13px;
+      background: #f6faf8;
+      font-size: 14px;
+      color: #40514b;
+    }
+
+    .simple-action strong {
+      color: var(--primary-dark);
+      white-space: nowrap;
+    }
+
+    /* CALLOUT */
+
+    .callout {
+      max-width: 900px;
+      margin: 58px auto 0;
+      padding: 48px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(255,255,255,.12), transparent 30%),
+        var(--primary-dark);
+      color: white;
+      text-align: center;
+      box-shadow: 0 25px 70px rgba(13, 79, 62, 0.18);
+    }
+
+    .callout-icon {
+      width: 54px;
+      height: 54px;
+      margin: 0 auto 20px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(255,255,255,.12);
+      font-size: 25px;
+    }
+
+    .callout h2 {
+      font-size: 31px;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+
+    .callout p {
+      max-width: 660px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 16px;
+    }
+
+    /* QUICK CHECKLIST */
+
+    .checklist-section {
+      max-width: 900px;
+      margin: 72px auto 0;
+    }
+
+    .checklist-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .checklist-header h2 {
+      font-size: 32px;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .checklist-header p {
+      color: var(--text-soft);
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .check-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .check {
+      width: 25px;
+      height: 25px;
+      flex: 0 0 25px;
+      border-radius: 50%;
+      background: var(--primary-soft);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: white;
+      padding: 38px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      color: var(--text-soft);
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .disclaimer {
+      max-width: 650px;
+      text-align: right;
+      line-height: 1.5;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 760px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 0 58px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      main {
+        padding-top: 55px;
+      }
+
+      .habit {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 28px;
+      }
+
+      .habit-number {
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+      }
+
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+
+      .callout {
+        padding: 38px 25px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .disclaimer {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-description {
+        font-size: 17px;
+      }
+
+      .habit h3 {
+        font-size: 22px;
+      }
+
+      .simple-action {
+        flex-direction: column;
+        gap: 3px;
+      }
+    }
+    /* HABIT 10 - SUPPLEMENT PRODUCT */
+
+.supplement-habit {
+  align-items: flex-start;
+}
+
+.product-card {
+  margin-top: 25px;
+  padding: 26px;
+  border: 1px solid #e1e9e5;
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbf9 0%,
+      #ffffff 60%
+    );
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.product-image-wrap {
+  background: #ffffff;
+  border: 1px solid #edf0ee;
+  border-radius: 17px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 175px;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.04);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-label {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary-soft);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 6px 11px;
+  margin-bottom: 11px;
+
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 1px;
+}
+
+.product-info h4 {
+  margin: 0 0 5px;
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+}
+
+.product-subtitle {
+  margin-bottom: 14px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product-info p {
+  margin-bottom: 18px;
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.product-features {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.product-feature {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #40514b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.feature-check {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 21px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.product-button {
+  min-height: 49px;
+  padding: 0 21px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  border-radius: 12px;
+  background: var(--primary);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  box-shadow: 0 10px 25px rgba(23, 107, 85, 0.18);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(23, 107, 85, 0.24);
+}
+
+.button-arrow {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.product-button:hover .button-arrow {
+  transform: translateX(3px);
+}
+
+.product-note {
+  display: block;
+  margin-top: 12px;
+  color: #89938f;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+/* PRODUCT RESPONSIVE */
+
+@media (max-width: 720px) {
+
+  .product-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 22px;
+  }
+
+  .product-image-wrap {
+    min-height: 220px;
+  }
+
+  .product-image {
+    max-width: 165px;
+    height: 200px;
+  }
+
+  .product-button {
+    width: 100%;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        Wellbeing Daily
+      </a>
+
+      <nav class="nav-links">
+        <a href="#habits">Healthy Habits</a>
+        <a href="#checklist">Daily Checklist</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          ✦ Everyday Wellness
+        </div>
+
+        <h1>
+          10 Simple Habits to Improve
+          <span>Your Well-Being</span>
+        </h1>
+
+        <p class="hero-description">
+          Feeling better doesn't always require a complete lifestyle overhaul.
+          Small, realistic choices practiced consistently can help support your
+          physical, mental, and emotional well-being.
+        </p>
+
+        <div class="hero-meta">
+          <span>☀ Simple daily practices</span>
+          <span>•</span>
+          <span>5-minute read</span>
+          <span>•</span>
+          <span>Updated for everyday life</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <div class="container">
+
+      <section class="intro">
+        <h2>Small changes can add up.</h2>
+
+        <p>
+          You don't need to adopt all ten habits at once. Choose one or two
+          that feel realistic for your current routine, practice them
+          consistently, and build from there.
+        </p>
+      </section>
+
+      <section class="habits" id="habits">
+
+        <!-- HABIT 1 -->
+        <article class="habit">
+          <div class="habit-number">01</div>
+
+          <div class="habit-content">
+            <h3>Start Your Day With Water</h3>
+
+            <p>
+              After several hours of sleep, drinking water can be a simple way
+              to begin your morning routine. Keeping a glass or bottle nearby
+              can also make hydration easier to remember throughout the day.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Keep a glass of water beside your bed or prepare a bottle the
+                night before.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 2 -->
+        <article class="habit">
+          <div class="habit-number">02</div>
+
+          <div class="habit-content">
+            <h3>Move Your Body Every Day</h3>
+
+            <p>
+              Movement doesn't have to mean an intense workout. Walking,
+              stretching, gardening, cycling, or taking the stairs can all
+              introduce more physical activity into an ordinary day.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Take a 10-minute walk after lunch or dinner and gradually add
+                more movement when it feels comfortable.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 3 -->
+        <article class="habit">
+          <div class="habit-number">03</div>
+
+          <div class="habit-content">
+            <h3>Protect Your Sleep Routine</h3>
+
+            <p>
+              A consistent evening routine can help create a clearer transition
+              between an active day and bedtime. Regular sleep and wake times
+              may also make your schedule feel more predictable.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Create a simple 30-minute wind-down routine and aim for similar
+                sleep and wake times each day.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 4 -->
+        <article class="habit">
+          <div class="habit-number">04</div>
+
+          <div class="habit-content">
+            <h3>Eat More Whole Foods</h3>
+
+            <p>
+              Instead of trying to make your diet perfect overnight, focus on
+              adding nutritious foods to meals you already enjoy. Fruits,
+              vegetables, whole grains, legumes, nuts, and other minimally
+              processed foods can bring more variety to your plate.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Add one fruit or vegetable to a meal you already eat regularly.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 5 -->
+        <article class="habit">
+          <div class="habit-number">05</div>
+
+          <div class="habit-content">
+            <h3>Take Short Screen Breaks</h3>
+
+            <p>
+              Phones and computers can easily occupy hours of the day. Brief
+              breaks create opportunities to stand, stretch, look into the
+              distance, or simply give your attention a different focus.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Step away from your screen for a few minutes every hour,
+                especially during long periods of focused work.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 6 -->
+        <article class="habit">
+          <div class="habit-number">06</div>
+
+          <div class="habit-content">
+            <h3>Spend a Little Time Outdoors</h3>
+
+            <p>
+              Going outside can provide a natural break from indoor routines.
+              A walk around the neighborhood, a few minutes in a garden, or
+              simply sitting outside can become a pleasant daily ritual.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Spend 10 to 20 minutes outside during a part of the day that
+                works naturally with your schedule.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 7 -->
+        <article class="habit">
+          <div class="habit-number">07</div>
+
+          <div class="habit-content">
+            <h3>Practice a Moment of Gratitude</h3>
+
+            <p>
+              Taking a moment to notice positive experiences can help you pay
+              more attention to the parts of everyday life that are easy to
+              overlook. It doesn't need to be profound — small things count.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Before bed, write down three things from your day that you
+                appreciated.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 8 -->
+        <article class="habit">
+          <div class="habit-number">08</div>
+
+          <div class="habit-content">
+            <h3>Stay Connected With People</h3>
+
+            <p>
+              Relationships are an important part of everyday well-being.
+              Small acts of connection — a conversation, shared meal, phone
+              call, or thoughtful message — can help keep relationships active.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Reach out to one person you care about today, even if it's just
+                a short message.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- HABIT 9 -->
+        <article class="habit">
+          <div class="habit-number">09</div>
+
+          <div class="habit-content">
+            <h3>Create Space to Slow Down</h3>
+
+            <p>
+              Busy days can make every moment feel occupied. Creating even a
+              few quiet minutes can give you space to breathe, reflect, read,
+              stretch, or simply sit without immediately moving to the next
+              task.
+            </p>
+
+            <div class="simple-action">
+              <strong>Try this:</strong>
+              <span>
+                Set aside five quiet minutes each day with no notifications,
+                scrolling, or multitasking.
+              </span>
+            </div>
+          </div>
+        </article>
+
+ <!-- HABIT 10 -->
+<article class="habit supplement-habit">
+  <div class="habit-number">10</div>
+
+  <div class="habit-content">
+    <h3>Consider Nutritional Support</h3>
+
+    <p>
+      A balanced diet, regular movement, quality sleep, and other healthy
+      lifestyle habits are the foundation of everyday well-being. Some people
+      also choose dietary supplements as an additional part of their wellness
+      routine.
+    </p>
+
+    <div class="product-card">
+
+      <div class="product-image-wrap">
+        <img
+          src="https://m.media-amazon.com/images/I/71wzoW-73nL._AC_SL1500_.jpg"
+          alt="Source Naturals Wellness Formula Advanced Immune Support - 240 Capsules"
+          class="product-image"
+        >
+      </div>
+
+      <div class="product-info">
+
+        <span class="product-label">WELLNESS PICK</span>
+
+        <h4>
+          Source Naturals Wellness Formula
+        </h4>
+
+        <div class="product-subtitle">
+          Advanced Immune Support • 240 Capsules
+        </div>
+
+        <p>
+          A Bio-Aligned Formula® featuring vitamin C plus more than 30
+          vitamins, minerals, and time-tested herbs formulated to provide
+          nutritional support for the immune system.
+        </p>
+
+        <div class="product-features">
+
+          <div class="product-feature">
+            <span class="feature-check">✓</span>
+            <span>High-potency Vitamin C</span>
+          </div>
+
+          <div class="product-feature">
+            <span class="feature-check">✓</span>
+            <span>30+ vitamins, minerals &amp; herbs</span>
+          </div>
+
+          <div class="product-feature">
+            <span class="feature-check">✓</span>
+            <span>Advanced immune system support</span>
+          </div>
+
+        </div>
+
+        <a
+          href="https://www.amazon.com/gp/aw/d/B000GFSVI2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="product-button"
+        >
+          View Product
+          <span class="button-arrow">→</span>
+        </a>
+
+        <span class="product-note">
+          Check the product label, ingredients, directions, and warnings before use.
+        </span>
+
+      </div>
+    </div>
+
+  </div>
+</article>
+
+      </section>
+
+      <!-- CALLOUT -->
+      <section class="callout">
+        <div class="callout-icon">✦</div>
+
+        <h2>You don't need to change everything today.</h2>
+
+        <p>
+          Sustainable well-being is often built through ordinary choices
+          repeated over time. Start with what feels manageable, pay attention
+          to how it fits into your life, and adjust your routine as needed.
+        </p>
+      </section>
+
+      <!-- CHECKLIST -->
+      <section class="checklist-section" id="checklist">
+
+        <div class="checklist-header">
+          <h2>Your Simple Daily Checklist</h2>
+          <p>
+            Use this as a gentle reminder, not a list of rules.
+          </p>
+        </div>
+
+        <div class="checklist">
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Drink water regularly
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Move your body
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Eat something nourishing
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Take a screen break
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Spend time outdoors
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Connect with someone
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Create a quiet moment
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            Prepare for restful sleep
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="about">
+    <div class="container footer-inner">
+
+      <div>
+        <span class="footer-brand">Wellbeing Daily</span><br>
+        Simple ideas for healthier everyday living.
+      </div>
+
+      <div class="disclaimer">
+        This content is provided for general informational and educational
+        purposes only and is not intended as medical advice, diagnosis, or
+        treatment. Consult a qualified healthcare professional regarding
+        individual health concerns.
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
